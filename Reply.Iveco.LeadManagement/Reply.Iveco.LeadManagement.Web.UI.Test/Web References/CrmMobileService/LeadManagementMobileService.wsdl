@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="CheckLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckLoginResult" type="tns:CheckLoginResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CheckLoginResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrentUser" type="tns:SystemUser" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SystemUser">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BusinessUnitIdDsc" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SystemUserId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeletionStateCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BusinessUnitId" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NickName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DomainName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsDisabled" nillable="true" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLanguages">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLanguagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLanguagesResult" type="tns:GetLanguagesResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetLanguagesResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Languages" type="tns:ArrayOfNew_language" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfNew_language">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="New_language" nillable="true" type="tns:New_language" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="New_language">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="New_QueueOverbookingIdDsc" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_QueueOverbookingIdName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_languageId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeletionStateCode" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_SlotDuration" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_QueueOverbookingId" nillable="true" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_BookingStartHour" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_BookingEndHour" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCountries">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCountriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCountriesResult" type="tns:GetCountriesResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCountriesResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Countries" type="tns:ArrayOfNew_country" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfNew_country">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="New_country" nillable="true" type="tns:New_country" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="New_country">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedByDsc" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedByName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModifiedByDsc" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModifiedByName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_DefaultLanguageIdDsc" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_DefaultLanguageIdName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_LeadAssignedToIdDsc" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_LeadAssignedToIdName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_LeadAssignedToIdYomiName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_TeamLeaderOverbookingIdDsc" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_TeamLeaderOverbookingIdName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_TeamLeaderOverbookingIdYomiName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationIdDsc" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrganizationIdName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_countryId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedOn" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedBy" nillable="true" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModifiedOn" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModifiedBy" nillable="true" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" nillable="true" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="statecode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="statuscode" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeletionStateCode" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ImportSequenceNumber" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverriddenCreatedOn" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TimeZoneRuleVersionNumber" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UTCConversionTimeZoneCode" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_CSIDays" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_CRMDealer" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_CRMDealerAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_DuplicatedLeadDays" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_LeadAssignedToId" nillable="true" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_DefaultLanguageId" nillable="true" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_ASAPEndDays" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_ASAPStartHours" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_BookingEndDays" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_BookingStartDays" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_TeamLeaderOverbookingId" nillable="true" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_UsedLeadToMarket" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_organizationname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_NewName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_NewSurname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_NewEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_UsedName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_Usedsurname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="New_UsedEmail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="New_CSIEndDay" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetLead">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="param" type="tns:SetLeadParameter" />
+            <s:element minOccurs="1" maxOccurs="1" name="idOperator" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetLeadParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountryId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="LanguageId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeContactCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TelephoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiativeSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiativeSourceReport" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiativeSourceReportDetail" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetLeadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetLeadResult" type="tns:SetLeadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetLeadResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckLogin" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLanguagesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLanguages" />
+  </wsdl:message>
+  <wsdl:message name="GetLanguagesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLanguagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountries" />
+  </wsdl:message>
+  <wsdl:message name="GetCountriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetLeadSoapIn">
+    <wsdl:part name="parameters" element="tns:SetLead" />
+  </wsdl:message>
+  <wsdl:message name="SetLeadSoapOut">
+    <wsdl:part name="parameters" element="tns:SetLeadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LeadManagementMobileServiceSoap">
+    <wsdl:operation name="CheckLogin">
+      <wsdl:input message="tns:CheckLoginSoapIn" />
+      <wsdl:output message="tns:CheckLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <wsdl:input message="tns:GetLanguagesSoapIn" />
+      <wsdl:output message="tns:GetLanguagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <wsdl:input message="tns:GetCountriesSoapIn" />
+      <wsdl:output message="tns:GetCountriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetLead">
+      <wsdl:input message="tns:SetLeadSoapIn" />
+      <wsdl:output message="tns:SetLeadSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LeadManagementMobileServiceSoap" type="tns:LeadManagementMobileServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckLogin">
+      <soap:operation soapAction="http://tempuri.org/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <soap:operation soapAction="http://tempuri.org/GetLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <soap:operation soapAction="http://tempuri.org/GetCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLead">
+      <soap:operation soapAction="http://tempuri.org/SetLead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LeadManagementMobileServiceSoap12" type="tns:LeadManagementMobileServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckLogin">
+      <soap12:operation soapAction="http://tempuri.org/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguages">
+      <soap12:operation soapAction="http://tempuri.org/GetLanguages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <soap12:operation soapAction="http://tempuri.org/GetCountries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLead">
+      <soap12:operation soapAction="http://tempuri.org/SetLead" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LeadManagementMobileService">
+    <wsdl:port name="LeadManagementMobileServiceSoap" binding="tns:LeadManagementMobileServiceSoap">
+      <soap:address location="http://localhost:29540/services/LeadManagementMobileService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LeadManagementMobileServiceSoap12" binding="tns:LeadManagementMobileServiceSoap12">
+      <soap12:address location="http://localhost:29540/services/LeadManagementMobileService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

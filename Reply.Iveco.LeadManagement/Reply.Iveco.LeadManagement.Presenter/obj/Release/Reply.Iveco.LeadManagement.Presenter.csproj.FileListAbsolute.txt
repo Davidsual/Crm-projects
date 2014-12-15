@@ -1,0 +1,8 @@
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Presenter\bin\Release\Reply.Iveco.LeadManagement.Presenter.dll.config
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Presenter\bin\Release\Reply.Iveco.LeadManagement.Presenter.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Presenter\bin\Release\Reply.Iveco.LeadManagement.Presenter.XmlSerializers.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Presenter\bin\Release\Reply.Iveco.LeadManagement.Presenter.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Presenter\obj\Release\ResolveAssemblyReference.cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Presenter\obj\Release\Reply.Iveco.LeadManagement.Presenter.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Presenter\obj\Release\Reply.Iveco.LeadManagement.Presenter.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Presenter\obj\Release\Reply.Iveco.LeadManagement.Presenter.XmlSerializers.dll

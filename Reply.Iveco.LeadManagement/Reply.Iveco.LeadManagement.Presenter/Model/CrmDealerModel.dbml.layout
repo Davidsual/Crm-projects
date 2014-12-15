@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.375, 31.125" name="CrmDealerModel">
+  <DataContextMoniker Name="/CrmDealerModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c4d7b015-10ea-408c-b643-e700461a9766" absoluteBounds="0.5, 0.5, 2, 30.423810221354167">
+      <DataClassMoniker Name="/CrmDealerModelDataContext/Lead" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a183455f-b430-4ac0-862f-56ccf099753e" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 29.863810221354164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8fc3c0f-d8af-431b-b1d9-6aeb077e9f54" absoluteBounds="3, 0.5, 2, 14.0781884765625">
+      <DataClassMoniker Name="/CrmDealerModelDataContext/New_leadlog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6aabaff9-1644-4867-9a03-6161270f2549" absoluteBounds="3.015, 0.96, 1.9700000000000002, 13.5181884765625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3294875a-b1db-451b-b520-75511c71bf69" absoluteBounds="5.375, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CrmDealerModelDataContext/New_tablecrm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8ba6e7a-8385-4f8c-89d4-e9c8dbb3b6f5" absoluteBounds="5.39, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54b0d6aa-992f-49a2-80d2-c36c84ca3f9c" absoluteBounds="7.5, 0.5, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/CrmDealerModelDataContext/New_trascodifica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bdb0cbf0-d696-4195-a38c-31380793ac47" absoluteBounds="7.5150000000000006, 0.96, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6566f584-696a-4d5a-956c-8a940cdbe0da" absoluteBounds="9.75, 0.5, 2, 6.0015283203125">
+      <DataClassMoniker Name="/CrmDealerModelDataContext/New_tabellacare" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7063b09-8872-4a14-8f65-0e68e8874933" absoluteBounds="9.765, 0.96, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e55b60e8-7584-4d49-b584-7bb32711e42e" absoluteBounds="12.125, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/CrmDealerModelDataContext/StringMap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="68b838b6-693b-4b35-a9ef-85014ad47f40" absoluteBounds="12.14, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.Web.UI", "Reply.Iveco.LeadManagement.Web.UI\Reply.Iveco.LeadManagement.Web.UI.csproj", "{A7A71C8E-B3F5-4E60-A4E2-1BACE96A292B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.Presenter", "Reply.Iveco.LeadManagement.Presenter\Reply.Iveco.LeadManagement.Presenter.csproj", "{EFF97B37-449C-4670-9309-7681EF564B06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.Web.UI.Test", "Reply.Iveco.LeadManagement.Web.UI.Test\Reply.Iveco.LeadManagement.Web.UI.Test.csproj", "{525C746B-B682-4128-B3C7-115E412F33B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A7A71C8E-B3F5-4E60-A4E2-1BACE96A292B} = {A7A71C8E-B3F5-4E60-A4E2-1BACE96A292B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.DossierOnSavePlugin", "Reply.Iveco.LeadManagement.DossierOnSavePlugin\Reply.Iveco.LeadManagement.DossierOnSavePlugin.csproj", "{E027E4A6-2AC2-45F0-9ECF-D927E26A25F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.LoadContactService", "Reply.Iveco.LeadManagement.LoadContactService\Reply.Iveco.LeadManagement.LoadContactService.csproj", "{3C3730E7-B456-45F2-86ED-869455C40269}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.CrmDealerLead", "Reply.Iveco.LeadManagement.CrmDealerLead\Reply.Iveco.LeadManagement.CrmDealerLead.csproj", "{EB3F09FB-250C-438C-8B8F-C93829A38597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.LoadLeadService", "Reply.Iveco.LeadManagement.LoadLeadService\Reply.Iveco.LeadManagement.LoadLeadService.csproj", "{A2DD4CFE-DE08-47FB-8A82-4A624BB35431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.DossierOnCreatePlugin", "Reply.Iveco.LeadManagement.DossierOnCreatePlugin\Reply.Iveco.LeadManagement.DossierOnCreatePlugin.csproj", "{FE13ADDB-42AD-40DE-9D36-001EA717E9E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Iveco.LeadManagement.Utils", "Reply.Iveco.LeadManagement.Utils\Reply.Iveco.LeadManagement.Utils.csproj", "{65017A3C-BCD3-481C-A983-6F9682880161}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsaws.reply.it/tfs
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Reply.Iveco.LeadManagement.Presenter\\Reply.Iveco.LeadManagement.Presenter.csproj
+		SccProjectName1 = Reply.Iveco.LeadManagement.Presenter
+		SccLocalPath1 = Reply.Iveco.LeadManagement.Presenter
+		SccProjectUniqueName2 = Reply.Iveco.LeadManagement.Web.UI.Test\\Reply.Iveco.LeadManagement.Web.UI.Test.csproj
+		SccProjectName2 = Reply.Iveco.LeadManagement.Web.UI.Test
+		SccLocalPath2 = Reply.Iveco.LeadManagement.Web.UI.Test
+		SccProjectUniqueName3 = Reply.Iveco.LeadManagement.Web.UI\\Reply.Iveco.LeadManagement.Web.UI.csproj
+		SccProjectName3 = Reply.Iveco.LeadManagement.Web.UI
+		SccLocalPath3 = Reply.Iveco.LeadManagement.Web.UI
+		SccProjectUniqueName4 = Reply.Iveco.LeadManagement.DossierOnSavePlugin\\Reply.Iveco.LeadManagement.DossierOnSavePlugin.csproj
+		SccProjectName4 = Reply.Iveco.LeadManagement.DossierOnSavePlugin
+		SccLocalPath4 = Reply.Iveco.LeadManagement.DossierOnSavePlugin
+		SccProjectUniqueName5 = Reply.Iveco.LeadManagement.LoadContactService\\Reply.Iveco.LeadManagement.LoadContactService.csproj
+		SccProjectName5 = Reply.Iveco.LeadManagement.LoadContactService
+		SccLocalPath5 = Reply.Iveco.LeadManagement.LoadContactService
+		SccProjectUniqueName6 = Reply.Iveco.LeadManagement.CrmDealerLead\\Reply.Iveco.LeadManagement.CrmDealerLead.csproj
+		SccProjectName6 = Reply.Iveco.LeadManagement.CrmDealerLead
+		SccLocalPath6 = Reply.Iveco.LeadManagement.CrmDealerLead
+		SccProjectUniqueName7 = Reply.Iveco.LeadManagement.LoadLeadService\\Reply.Iveco.LeadManagement.LoadLeadService.csproj
+		SccProjectName7 = Reply.Iveco.LeadManagement.LoadLeadService
+		SccLocalPath7 = Reply.Iveco.LeadManagement.LoadLeadService
+		SccProjectUniqueName8 = Reply.Iveco.LeadManagement.DossierOnCreatePlugin\\Reply.Iveco.LeadManagement.DossierOnCreatePlugin.csproj
+		SccProjectName8 = Reply.Iveco.LeadManagement.DossierOnCreatePlugin
+		SccLocalPath8 = Reply.Iveco.LeadManagement.DossierOnCreatePlugin
+		SccProjectUniqueName9 = Reply.Iveco.LeadManagement.Utils\\Reply.Iveco.LeadManagement.Utils.csproj
+		SccProjectName9 = Reply.Iveco.LeadManagement.Utils
+		SccLocalPath9 = Reply.Iveco.LeadManagement.Utils
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7A71C8E-B3F5-4E60-A4E2-1BACE96A292B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A71C8E-B3F5-4E60-A4E2-1BACE96A292B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A71C8E-B3F5-4E60-A4E2-1BACE96A292B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A71C8E-B3F5-4E60-A4E2-1BACE96A292B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF97B37-449C-4670-9309-7681EF564B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF97B37-449C-4670-9309-7681EF564B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF97B37-449C-4670-9309-7681EF564B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF97B37-449C-4670-9309-7681EF564B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{525C746B-B682-4128-B3C7-115E412F33B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525C746B-B682-4128-B3C7-115E412F33B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525C746B-B682-4128-B3C7-115E412F33B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525C746B-B682-4128-B3C7-115E412F33B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E027E4A6-2AC2-45F0-9ECF-D927E26A25F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E027E4A6-2AC2-45F0-9ECF-D927E26A25F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E027E4A6-2AC2-45F0-9ECF-D927E26A25F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E027E4A6-2AC2-45F0-9ECF-D927E26A25F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3730E7-B456-45F2-86ED-869455C40269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3730E7-B456-45F2-86ED-869455C40269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3730E7-B456-45F2-86ED-869455C40269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3730E7-B456-45F2-86ED-869455C40269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3F09FB-250C-438C-8B8F-C93829A38597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3F09FB-250C-438C-8B8F-C93829A38597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3F09FB-250C-438C-8B8F-C93829A38597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3F09FB-250C-438C-8B8F-C93829A38597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2DD4CFE-DE08-47FB-8A82-4A624BB35431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DD4CFE-DE08-47FB-8A82-4A624BB35431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DD4CFE-DE08-47FB-8A82-4A624BB35431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DD4CFE-DE08-47FB-8A82-4A624BB35431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE13ADDB-42AD-40DE-9D36-001EA717E9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE13ADDB-42AD-40DE-9D36-001EA717E9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE13ADDB-42AD-40DE-9D36-001EA717E9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE13ADDB-42AD-40DE-9D36-001EA717E9E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65017A3C-BCD3-481C-A983-6F9682880161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65017A3C-BCD3-481C-A983-6F9682880161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65017A3C-BCD3-481C-A983-6F9682880161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65017A3C-BCD3-481C-A983-6F9682880161}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

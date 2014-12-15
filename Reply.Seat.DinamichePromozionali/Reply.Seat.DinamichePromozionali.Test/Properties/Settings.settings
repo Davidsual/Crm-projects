@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Reply.Seat.DinamichePromozionali.Test.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Reply_Seat_DinamichePromozionali_Test_DinamichePromozionaliServices_DinamichePromozionaliServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:60908/DinamichePromozionaliServices.asmx</Value>
+    </Setting>
+    <Setting Name="CrmUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:60908/DinamichePromozionaliServices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

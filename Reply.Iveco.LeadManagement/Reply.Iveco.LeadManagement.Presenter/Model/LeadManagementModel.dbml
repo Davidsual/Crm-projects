@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="IvecoLeadManagement_MSCRM" EntityNamespace="Reply.Iveco.LeadManagement.Presenter.Model" ContextNamespace="Reply.Iveco.LeadManagement.Presenter.Model" Class="LeadManagementModelDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=to0crm03;Initial Catalog=IvecoLeadManagement_MSCRM;User ID=d.trotta" SettingsObjectName="Reply.Iveco.LeadManagement.Presenter.Properties.Settings" SettingsPropertyName="IvecoLeadManagement_MSCRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Service" Member="Services">
+    <Type Name="Service">
+      <Column Name="CreatedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="CreatedByYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedByYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OrganizationIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OrganizationIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ResourceSpecIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResourceSpecIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(160) NOT NULL" CanBeNull="false" />
+      <Column Name="OrganizationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ResourceSpecId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="AnchorOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Duration" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsSchedulable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StrategyId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="InitialStatusCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CalendarId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ShowResources" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Granularity" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsVisible" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TimeZoneRule" Member="TimeZoneRules">
+    <Type Name="TimeZoneRule">
+      <Column Name="Bias" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="TimeZoneDefinitionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TimeZoneDefinition" Member="TimeZoneDefinitions">
+    <Type Name="TimeZoneDefinition">
+      <Column Name="TimeZoneCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="TimeZoneDefinitionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_productmodel" Member="New_productmodels">
+    <Type Name="New_productmodel">
+      <Column Name="New_productmodelId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VehicleModelListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_productpower" Member="New_productpowers">
+    <Type Name="New_productpower">
+      <Column Name="New_productpowerId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VehicleModelListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_productgvw" Member="New_productgvws">
+    <Type Name="New_productgvw">
+      <Column Name="New_productgvwId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VehicleModelListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_productfuel" Member="New_productfuels">
+    <Type Name="New_productfuel">
+      <Column Name="New_productfuelId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VehicleModelListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_productcabtype" Member="New_productcabtypes">
+    <Type Name="New_productcabtype">
+      <Column Name="New_productcabtypeId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VehicleModelListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_productsuspensiontype" Member="New_productsuspensiontypes">
+    <Type Name="New_productsuspensiontype">
+      <Column Name="New_productsuspensiontypeId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VehicleModelListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_producttype" Member="New_producttypes">
+    <Type Name="New_producttype">
+      <Column Name="New_producttypeId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VehicleModelListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_productwheeltype" Member="New_productwheeltypes">
+    <Type Name="New_productwheeltype">
+      <Column Name="New_productwheeltypeId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VehicleModelListId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_vehiclemodellist" Member="New_vehiclemodellists">
+    <Type Name="New_vehiclemodellist">
+      <Column Name="New_vehiclemodellistId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_InsertDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CountryId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QueueItem" Member="QueueItems">
+    <Type Name="QueueItem">
+      <Column Name="QueueItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="QueueId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ObjectId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActivityParty" Member="ActivityParties">
+    <Type Name="ActivityParty">
+      <Column Name="ActivityPartyId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ActivityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PartyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PartyObjectTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceAppointment" Member="ServiceAppointments">
+    <Type Name="ServiceAppointment">
+      <Column Name="ActualDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ActualEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ActualStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="CreatedByYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsBilled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsWorkflowCreated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedByYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_CountryIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_CountryIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_LanguageIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_LanguageIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_UserIDContact1IdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_UserIDContact1IdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_UserIDContact1IdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_UserIDContact2IdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_UserIDContact2IdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_UserIDContact2IdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_UserIDContact3IdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_UserIDContact3IdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_UserIDContact3IdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PriorityCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RegardingObjectId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="RegardingObjectIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RegardingObjectIdName" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="RegardingObjectIdYomiName" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="RegardingObjectTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ScheduledDurationMinutes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ScheduledEnd" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScheduledStart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ServiceIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ServiceIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="SiteIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SiteIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SubscriptionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Subcategory" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ActivityId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="IsAllDayEvent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SiteId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_IDDossier" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_TypeContact" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_InitiativeSource" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_InitiativeSourceReport" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_InitiativeSourceReportDetail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_CountryId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_LanguageId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_PhoneNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_IDDossierMaster" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DateTimeContact1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DateTimeContact2" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_DateTimeContact3" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_ResultContact1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ResultContact2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ResultContact3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_UserIDContact1Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_UserIDContact2Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_UserIDContact3Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_ServiceType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_vehiclemodel" Member="New_vehiclemodels">
+    <Type Name="New_vehiclemodel">
+      <Column Name="New_AxleNumberIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_AxleNumberIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CabTypeIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CabTypeIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_EngineHPIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_EngineHPIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_FuelIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_FuelIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_GVWIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_GVWIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_ModelIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_ModelIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_PowerIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_PowerIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_SuspensionsTypeStralisIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_SuspensionsTypeStralisIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_SuspensionTypeIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_SuspensionTypeIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TractionIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TractionIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_Type34axleIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_Type34axleIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TypeIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TypeIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VanVolumeIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VanVolumeIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_WheelbasechassisIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_WheelbasechassisIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_WheelTypeIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_WheelTypeIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_vehiclemodelId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_AxleNumberId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CabTypeId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_EngineHPId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_FuelId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_GVWId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_ModelId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_PowerId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_SuspensionTypeId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_SuspensionsTypeStralisId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TractionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TypeId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_Type34axleId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_VanVolumeId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_WheelTypeId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_WheelbasechassisId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_gototab" Member="New_gototabs">
+    <Type Name="New_gototab">
+      <Column Name="New_gototabId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_INITIATIVESOURCE" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_INITIATIVESOURCEREPORT" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_INITIATIVESOURCEREPORTDETAIL" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_GOTOTAB" Member="New_GOTOTAB1" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CountryId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_helpfile" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_Default" Type="System.Boolean" DbType="Bit" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_servicesconfiguration" Member="New_servicesconfigurations">
+    <Type Name="New_servicesconfiguration">
+      <Column Name="New_LanguageIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_LanguageIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_ServiceIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_servicesconfigurationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_ServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_ServiceType" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_LanguageId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResourceGroup" Member="ResourceGroups">
+    <Type Name="ResourceGroup">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ObjectTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ResourceGroupId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="GroupTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BusinessUnitId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OrganizationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConstraintBasedGroup" Member="ConstraintBasedGroups">
+    <Type Name="ConstraintBasedGroup">
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ConstraintBasedGroupId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Constraints" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ResourceSpec" Member="ResourceSpecs">
+    <Type Name="ResourceSpec">
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ObjectTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(160) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ResourceSpecId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="GroupObjectId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_language" Member="New_languages">
+    <Type Name="New_language">
+      <Column Name="New_QueueOverbookingIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_QueueOverbookingIdName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_languageId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_SlotDuration" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_QueueOverbookingId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_BookingStartHour" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_BookingEndHour" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_callback" Member="New_callbacks">
+    <Type Name="New_callback">
+      <Column Name="CreatedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OrganizationIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OrganizationIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_callbackId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OrganizationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_dataleadcreation" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_customername" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_customersurname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_address" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_zipcode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_city" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_province" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_nation" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_phonenumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_mobilephonenumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_flagprivacy" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_brand" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_stocksearchedmodel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_duedate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_typecontact" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_model" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_type" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_gvw" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_wheeltype" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_fuel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_flagprivacydue" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_idcare" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_initiativesource" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_initiativesourcereport" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_intiativesourcereportdetail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_companyname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_power" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_cabtype" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_suspension" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_commentwebform" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_idleadsite" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_language" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_codepromotion" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_modelofinterest" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_desidereddata" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_canale" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_startappointment" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_endappointment" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_callbackstate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_statusdescription" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="New_Source" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contact" Member="Contacts">
+    <Type Name="Contact">
+      <Column Name="AccountIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccountIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="AccountIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="CreatedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="CreatedByYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="DefaultPriceLevelIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DefaultPriceLevelIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MasterContactIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MasterContactIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="MasterContactIdYomiName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="ModifiedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedByYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_1CSIContactUserIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_1CSIContactUserIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_1CSIContactUserIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_1ProfilingContactUserIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_1ProfilingContactUserIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_1ProfilingContactUserIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_businesstypeidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_businesstypeidName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="New_countryidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_countryidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_CriticalCustomerReasonIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_CriticalCustomerReasonIdName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="New_CSIUserIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_CSIUserIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_CSIUserIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_customercontactedbythedealeridDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_customercontactedbythedealeridName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_dealerappointmentexecutedidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_dealerappointmentexecutedidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_dealerrecommendationidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_dealerrecommendationidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_findleadidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_findleadidName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_findleadidYomiName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="New_gammaidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_gammaidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_interlocutorroleidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_interlocutorroleidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_languageidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_languageidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_masterleadidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_masterleadidName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_masterleadidYomiName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="New_missionidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_missionidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_ProfilingUserIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ProfilingUserIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_ProfilingUserIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_purchasingtimeidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_purchasingtimeidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_QuotedoneIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_QuotedoneIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_reasonfornotexecutedappointmentidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_reasonfornotexecutedappointmentidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_theappointmentwasusefulidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_theappointmentwasusefulidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_VehicleOtherIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_VehicleOtherIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_VehiclePromotionIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_VehiclePromotionIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_VehiclePromptDeliveryIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_VehiclePromptDeliveryIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_VehicleVHLConfiguratorIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_VehicleVHLConfiguratorIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_versionidDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_versionidName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="OriginatingLeadIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OriginatingLeadIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OriginatingLeadIdYomiName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="ParentContactIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentContactIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ParentContactIdYomiName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="PreferredEquipmentIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredEquipmentIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="PreferredServiceIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredServiceIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="PreferredSystemUserIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredSystemUserIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="PreferredSystemUserIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="TransactionCurrencyIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TransactionCurrencyIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Address1_AddressId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Address1_AddressTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address1_Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Address1_PrimaryContactName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Address1_Line1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Address1_Line2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Address1_Line3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Address1_City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address1_StateOrProvince" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address1_County" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address1_Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address1_PostOfficeBox" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address1_PostalCode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address1_UTCOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address1_FreightTermsCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address1_UPSZone" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Address1_Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Address1_Telephone1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address1_Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Address1_ShippingMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address1_Telephone2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address1_Telephone3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address1_Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address1_TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address1_OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Address1_UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address1_ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address2_AddressId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Address2_AddressTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address2_Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Address2_PrimaryContactName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Address2_Line1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Address2_Line2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Address2_Line3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Address2_City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2_StateOrProvince" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2_County" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2_Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2_PostOfficeBox" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address2_PostalCode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address2_UTCOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address2_FreightTermsCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address2_UPSZone" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Address2_Latitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Address2_Telephone1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2_Longitude" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Address2_ShippingMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address2_Telephone2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2_Telephone3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2_Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address2_TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address2_OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Address2_UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address2_ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentCustomerId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ParentCustomerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ParentCustomerIdYomiName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="ParentCustomerIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ParentCustomerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContactId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultPriceLevelId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CustomerSizeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustomerTypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredContactMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LeadSourceCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OriginatingLeadId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PaymentTermsCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShippingMethodCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwningTeam" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ParticipatesInWorkflow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsBackofficeCustomer" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Salutation" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="JobTitle" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Department" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NickName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Suffix" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="YomiFirstName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="YomiMiddleName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="YomiLastName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Anniversary" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GovernmentId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="YomiFullName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EmployeeId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GenderCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnnualIncome" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HasChildrenCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EducationCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WebSiteUrl" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="FamilyStatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FtpSiteUrl" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="EMailAddress1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SpousesName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AssistantName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EMailAddress2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AssistantPhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EMailAddress3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DoNotPhone" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ManagerName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ManagerPhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DoNotFax" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotEMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotPostalMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotBulkEMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DoNotBulkPostalMail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AccountRoleCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TerritoryCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsPrivate" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreditLimit" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreditOnHold" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="NumberOfChildren" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChildrensNames" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pager" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Aging30" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Aging60" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Aging90" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ParentContactId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredSystemUserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredServiceId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="MasterId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredAppointmentDayCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreferredAppointmentTimeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DoNotSendMM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Merged" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ExternalUserIdentifier" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SubscriptionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PreferredEquipmentId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="LastUsedInCampaign" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TransactionCurrencyId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExchangeRate" Type="System.Decimal" DbType="Decimal(23,10)" CanBeNull="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnnualIncome_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CreditLimit_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging60_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging90_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Aging30_Base" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="New_idleadsito" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_typecontact" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_idleadcrmlm" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="New_1profilingcontactdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_profilingdateh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_dealerassignmentdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_1csicontactdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_csidateh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_dealercompanyname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_dealercode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_dealerresponsible" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_modelpc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_typepc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_gvwpc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_wheeltypepc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_fuelpc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_powerpc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_cabtypepc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_suspensionpc" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_flagusatopc" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_confermavhl" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_flagusatovhl" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_noteclientevhl" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_noteclientepm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_noteclienteot" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_flagusatopm" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_flagusatoot" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_noteclientepc" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_noteclienteus" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_flagusatous" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_csicustomernotes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_csioperatornotes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_motivoritorno" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_whattoimprove" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_countryid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_promptdeliverymodified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_gototab" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_modified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_languageid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_initiativesource" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_initiativesourcereport" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_initiativesourcereportdetail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_leadslave" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_masterleadid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_leadstatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_leadsubstatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_leadcategory" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_title" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_businesstypeid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_interlocutorroleid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_companyyear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_companyname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_typecontactconfirm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_profilingcustomernotes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_profilingoperatornotes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_flagprivacy" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_marketingaccount" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_contactseller" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_refusalreason" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_criticalcustomer" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_vhlselection" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_typeofgoodstransported" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_averagemonthlykm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_nownedvehicles" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_typeofvehiclecurrentlyowned" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_missionid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_gammaid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_versionid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_allestimento" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_customercontactedbythedealerid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_dealerappointmentexecutedid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_reasonfornotexecutedappointmentid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_theappointmentwasusefulid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_dealerrecommendationid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_purchasingtimeid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_DatahIDLeadCreation" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_EmailDealer" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DUEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_Desireddata" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_Stocksearchedmodel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_Flagprivacy2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_IdCare" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_Modelofinterest" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_PromotionalCode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_Channel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_findleadbutton" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_findleadid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="New_Purchasewithin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_EmailMA" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_Promotion" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_1ProfilingContactUserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_ProfilingUserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_1CSIContactUserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_CSIUserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_VehiclePromptDeliveryId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_VehicleVHLConfiguratorId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_VehiclePromotionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_VehicleOtherId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_ScriptLeadInformation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptTypeContactConfirm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptContactedByDealer" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptRefusalReason" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptPurchasewithin" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_QuotedoneId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_ScriptPromptDelivery" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptVHLConfiguration" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptVHLConfigurationConfirmation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptPromotion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptPromotionDetail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptOther" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptUsedGeneral" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptUsedDetails" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSIintro" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSI1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSI2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSI3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSI4" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSI5" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSI6" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSI7" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_ScriptCSI8" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_CriticalCustomerReasonId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_DealerAgree" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="New_Brand" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_criticalcustomerreason" Member="New_criticalcustomerreasons">
+    <Type Name="New_criticalcustomerreason">
+      <Column Name="New_criticalcustomerreasonId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CountryId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_Code" Type="System.Double" DbType="Float" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SystemUser" Member="SystemUsers">
+    <Type Name="SystemUser">
+      <Column Name="BusinessUnitIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SystemUserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="BusinessUnitId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NickName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DomainName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="IsDisabled" Type="System.Boolean" DbType="Bit" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_dealer" Member="New_dealers">
+    <Type Name="New_dealer">
+      <Column Name="CreatedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_CountryIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_CountryIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_dealerId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DealerCode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DefaultuserNEWName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DefaultuserNEWSurname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DefaultuserNEWUserCRM" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DefaultuserNEWEmail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DefaultuserUSEDName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DefaultuserUSEDSurname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DefaultuserUSEDUserCRM" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DefaultuserUSEDEmail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DealerManagerName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DealerManagerSurname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_DealerManagerEmail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_MarketdefaultuserNEWName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_MarketdefaultuserNEWSurname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_MarketdefaultuserNEWUserCRM" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_MarketdefaultuserNEWEmail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_MarketdefaultuserUSEDName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_MarketdefaultuserUSEDSurname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_MarketdefaultuserUSEDUsedCRM" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_MarketdefaultuserUSEDEmail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_CountryId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StringMap" Member="PickListValues">
+    <Type Name="PickListValue">
+      <Column Name="ObjectTypeCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AttributeName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="AttributeValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LangId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrganizationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DisplayOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="StringMapId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.New_country" Member="New_countries">
+    <Type Name="New_country">
+      <Column Name="CreatedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ModifiedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_DefaultLanguageIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_DefaultLanguageIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_LeadAssignedToIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_LeadAssignedToIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_LeadAssignedToIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TeamLeaderOverbookingIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TeamLeaderOverbookingIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TeamLeaderOverbookingIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OrganizationIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OrganizationIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_countryId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OrganizationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CSIDays" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CRMDealer" Type="System.Boolean" DbType="Bit" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CRMDealerAddress" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_DuplicatedLeadDays" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_LeadAssignedToId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_DefaultLanguageId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_ASAPEndDays" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_ASAPStartHours" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_BookingEndDays" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_BookingStartDays" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_TeamLeaderOverbookingId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_UsedLeadToMarket" Type="System.Boolean" DbType="Bit" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_organizationname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_NewName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_NewSurname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_NewEmail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_UsedName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_Usedsurname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_UsedEmail" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="New_CSIEndDay" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

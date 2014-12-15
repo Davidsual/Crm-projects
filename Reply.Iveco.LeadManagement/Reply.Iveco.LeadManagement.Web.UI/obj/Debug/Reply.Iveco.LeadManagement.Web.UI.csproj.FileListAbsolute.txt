@@ -1,0 +1,7 @@
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Web.UI\bin\Reply.Iveco.LeadManagement.Web.UI.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Web.UI\bin\Reply.Iveco.LeadManagement.Web.UI.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Web.UI\bin\Reply.Iveco.LeadManagement.Presenter.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Web.UI\bin\Reply.Iveco.LeadManagement.Presenter.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Web.UI\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Web.UI\obj\Debug\Reply.Iveco.LeadManagement.Web.UI.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Web.UI\obj\Debug\Reply.Iveco.LeadManagement.Web.UI.pdb

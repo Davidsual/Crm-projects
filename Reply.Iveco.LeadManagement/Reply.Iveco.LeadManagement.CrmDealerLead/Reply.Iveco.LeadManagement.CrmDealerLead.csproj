@@ -1,0 +1,196 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB3F09FB-250C-438C-8B8F-C93829A38597}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reply.Iveco.LeadManagement.CrmDealerLead</RootNamespace>
+    <AssemblyName>Reply.Iveco.LeadManagement.CrmDealerLead</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Reply.Iveco.LeadManagement.CrmDealerLead.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.crm.sdk, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="microsoft.crm.sdktypeproxy, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CRM_Style.css" />
+    <Content Include="Dialog.aspx" />
+    <Content Include="labels.xml" />
+    <Content Include="LeadMgmt.asmx" />
+    <Content Include="lib\microsoft.crm.sdk.dll" />
+    <Content Include="lib\microsoft.crm.sdktypeproxy.dll" />
+    <Content Include="Styles\common.css" />
+    <Content Include="Styles\dialogs.css" />
+    <Content Include="Styles\findButton.htc" />
+    <Content Include="Styles\fonts.css" />
+    <Content Include="Styles\gridcontrol.css" />
+    <Content Include="Styles\Images\btn_rest.gif" />
+    <Content Include="Styles\Images\excel.gif" />
+    <Content Include="Styles\Images\ico_16_1.gif" />
+    <Content Include="Styles\Images\ico_16_10.gif" />
+    <Content Include="Styles\Images\ico_16_4410.gif" />
+    <Content Include="Styles\Images\ico_16_8.gif" />
+    <Content Include="Styles\Images\lc_lookupbtn.gif" />
+    <Content Include="Styles\Images\lc_lookupbtnd.gif" />
+    <Content Include="Styles\Images\lc_lookupbtnh.gif" />
+    <Content Include="Styles\Images\menu_expand.gif" />
+    <Content Include="Styles\Images\menu_margin.gif" />
+    <Content Include="Styles\Images\notif_icn_warn16.png" />
+    <Content Include="Styles\Images\progress.gif" />
+    <Content Include="Styles\Images\qfind.gif" />
+    <Content Include="Styles\Images\qfinddown.gif" />
+    <Content Include="Styles\Images\qfindhover.gif" />
+    <Content Include="Styles\Images\toolbar_back.gif" />
+    <Content Include="Styles\Images\toolbar_hover.gif" />
+    <Content Include="Styles\lookup.css" />
+    <Content Include="Styles\Lookup.htc" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\page.htc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reply.Iveco.LeadManagement.CrmDealerLead.snk" />
+    <None Include="Web References\eu.reply.cloud.to0crm03ws\GetCalendarResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\eu.reply.cloud.to0crm03ws\LeadManagementServices.disco" />
+    <None Include="Web References\eu.reply.cloud.to0crm03ws\LeadManagementServices.wsdl" />
+    <None Include="Web References\eu.reply.cloud.to0crm03ws\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\eu.reply.cloud.to0crm03ws\SetAppointmentResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\eu.reply.cloud.to0crm03ws\SetDealerResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Extensions.cs" />
+    <Compile Include="Classes\Log.cs" />
+    <Compile Include="Classes\SqlQueryGenerator.cs" />
+    <Compile Include="Classes\CrmUtils.cs" />
+    <Compile Include="Dialog.aspx.cs">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dialog.aspx.designer.cs">
+      <DependentUpon>Dialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\DealerInfo.cs" />
+    <Compile Include="Entities\LeadMgmtConnectionInfo.cs" />
+    <Compile Include="LeadMgmt.asmx.cs">
+      <DependentUpon>LeadMgmt.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\eu.reply.cloud.to0crm03ws\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://to0crm03ws.cloud.reply.eu:8080/LeadManagement/services/LeadManagementServices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\eu.reply.cloud.to0crm03ws\</RelPath>
+      <UpdateFromURL>http://to0crm03ws.cloud.reply.eu:8080/LeadManagement/services/LeadManagementServices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Reply_Iveco_LeadManagement_CrmDealerLead_eu_reply_cloud_to0crm03ws_LeadManagementServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56410</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

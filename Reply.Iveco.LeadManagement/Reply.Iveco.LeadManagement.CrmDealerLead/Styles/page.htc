@@ -1,0 +1,115 @@
+<PUBLIC:ATTACH EVENT="onload" FOR="window" ONEVENT="handleLoad()" />
+<public:attach EVENT="onresize" FOR="window" ONEVENT="handleResize()">
+<PUBLIC:ATTACH EVENT="onselectstart" ONEVENT="handleSelect()" />
+<SCRIPT LANGUAGE="JScript">
+var appVersion = getAppVersion();
+function handleLoad()
+{
+	if(typeof(Sys) != 'undefined')if(typeof(Sys.WebForms) != 'undefined')if(typeof(Sys.WebForms.PageRequestManager) != 'undefined') return;
+    for(var I = 0; I < window.document.forms.length; I++)
+    {
+        if(!exists(window.document.forms[I].onsubmit))
+        {
+	        window.document.forms[I].onsubmit = handleSubmit;
+	        window.document.forms[I].notify = form_notify;
+	    }
+    }
+}
+function handleSelect()
+{
+	var s = event.srcElement.tagName;
+	if (s != "INPUT" && s != "TEXTAREA") event.returnValue = false;
+}
+function handleSubmit()
+{
+    var overlayElement = createOverlayElement();
+    if(overlayElement != null)
+    {
+        window.document.overlayElement = overlayElement;
+        overlayElement.style.left = 0 + 'px';
+        overlayElement.style.top = 0 + 'px';
+        overlayElement.style.width = window.document.body.clientWidth + 'px';
+        overlayElement.style.height = window.document.body.clientHeight + 'px';
+        overlayElement.style.visibility = 'visible';
+    }
+    return true;
+}
+function createOverlayElement()
+{
+    var overlayElement;
+    if(appVersion > 0 && appVersion < 7)
+    {
+        overlayElement = createOverlayIframe();
+    }
+    else
+    {
+        overlayElement = createOverlayDiv();
+    }
+    return overlayElement;
+}
+function createOverlayIframe()
+{
+    var iframe = window.document.createElement("iframe");
+    iframe.className = "overlay";
+    window.document.body.appendChild(iframe);
+    if(iframe.contentWindow)
+    {
+  	    var doc = iframe.contentWindow.document;
+        doc.open();
+        var html =  "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.0 Transitional//EN'>"
+  	        html += "<html><body style='background-color:black' oncontextmenu='javascript:event.returnValue=false;' onselectstart='javascript:event.returnValue=false;'>";
+  	        html += "<table cellspacing='0' cellpadding='0' style='width:100%;height:100%;table-layout:fixed'>";
+  	        html += "<tr><td style='text-align:center;vertical-align:middle;'>";
+  	        html += "<img src='./Images/progress.gif' alt='Processing...'/>";
+  	        html += "</td></tr></table></body></html>";
+        doc.write(html);
+  	    doc.close();
+    }
+    return iframe;
+}  
+function createOverlayDiv()
+{
+    var divOverlay = window.document.createElement("div");
+    divOverlay.className = "overlay";
+    window.document.body.appendChild(divOverlay);
+    return divOverlay;
+}
+function handleResize()
+{
+    var overlayElement = window.document.overlayElement;
+    if(exists(overlayElement))
+    {
+        overlayElement.style.left = 0 + 'px';
+        overlayElement.style.top = 0 + 'px';
+        overlayElement.style.width = window.document.body.clientWidth + 'px';
+        overlayElement.style.height = window.document.body.clientHeight + 'px';
+    }
+}
+function getAppVersion()
+{
+  var rv = -1;
+  if (navigator.appName == 'Microsoft Internet Explorer')
+  {
+    var ua = navigator.userAgent;
+    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(ua) != null)
+      rv = parseFloat( RegExp.$1 );
+  }
+  return rv;
+}
+function form_notify(flag)
+{
+    if(this.onsubmit == handleSubmit && flag == false)
+    {
+        this.onsubmit = null;
+    }
+    else
+    {
+        this.onsubmit = handleSubmit;
+    }
+}
+function exists(o)
+{
+	return ("undefined" != typeof(o) && "unknown" != typeof(o) && null != o)
+}
+</SCRIPT>

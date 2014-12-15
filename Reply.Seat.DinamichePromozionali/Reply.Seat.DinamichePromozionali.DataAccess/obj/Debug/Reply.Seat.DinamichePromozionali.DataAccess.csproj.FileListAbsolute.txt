@@ -1,0 +1,6 @@
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.DataAccess\bin\Debug\Reply.Seat.DinamichePromozionali.DataAccess.dll.config
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.DataAccess\bin\Debug\Reply.Seat.DinamichePromozionali.DataAccess.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.DataAccess\bin\Debug\Reply.Seat.DinamichePromozionali.DataAccess.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.DataAccess\obj\Debug\Reply.Seat.DinamichePromozionali.DataAccess.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.DataAccess\obj\Debug\Reply.Seat.DinamichePromozionali.DataAccess.pdb

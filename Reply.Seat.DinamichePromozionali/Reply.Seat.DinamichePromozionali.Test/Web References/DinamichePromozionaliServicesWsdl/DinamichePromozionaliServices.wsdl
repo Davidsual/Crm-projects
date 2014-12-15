@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="GetManagementPrize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idChiamanteCampagna" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="cryptedCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetManagementPrizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetManagementPrizeResult" type="tns:GetManagementPrizeResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetManagementPrizeResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessfull" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetStatusCampaign">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idCall" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cryptedCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idOperator" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStatusCampaignResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStatusCampaignResult" type="tns:GetStatusCampaignResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetStatusCampaignResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessfull" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ChiamanteCampagnaId" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="UrlLogoBanner" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UrlLogoPrivacy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UrlLogoCampagnaPush" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UrlLogoCampagnaVincita" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TestoMessaggioVincitaAPFisso" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TestoMessaggioVincitaAPMobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TestoMessaggioPushAP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TestoMessaggioRichiestaPrivacy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatoChiamanteCampagna" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrivacyChiamanteCampagna" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModalitaComunicazionePremio" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetPrivacy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idChiamanteCampagna" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="statusPrivacy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cryptedCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPrivacyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPrivacyResult" type="tns:SetPrivacyResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetPrivacyResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessfull" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetOnlyPrivacy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idChiamanteCampagna" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="statusPrivacy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetOnlyPrivacyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetOnlyPrivacyResult" type="tns:SetOnlyPrivacyResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetOnlyPrivacyResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessfull" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetChiamanteCampagna">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idChiamanteCampagna" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChiamanteCampagnaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChiamanteCampagnaResult" type="tns:GetChiamanteCampagnaResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetChiamanteCampagnaResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessfull" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodiceCifrato" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatoPartecipante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomeCampagna" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataFineCampagna" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumChiamateResidue" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumVinciteRimanenti" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumChiamateEffetuate" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Privacy" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumSmsInviati" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumCodiciPromozionaliUsati" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumChiamateGratuite" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumOggetti" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetManagementPrizeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetManagementPrize" />
+  </wsdl:message>
+  <wsdl:message name="GetManagementPrizeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetManagementPrizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusCampaignSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStatusCampaign" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusCampaignSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStatusCampaignResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPrivacySoapIn">
+    <wsdl:part name="parameters" element="tns:SetPrivacy" />
+  </wsdl:message>
+  <wsdl:message name="SetPrivacySoapOut">
+    <wsdl:part name="parameters" element="tns:SetPrivacyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetOnlyPrivacySoapIn">
+    <wsdl:part name="parameters" element="tns:SetOnlyPrivacy" />
+  </wsdl:message>
+  <wsdl:message name="SetOnlyPrivacySoapOut">
+    <wsdl:part name="parameters" element="tns:SetOnlyPrivacyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChiamanteCampagnaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChiamanteCampagna" />
+  </wsdl:message>
+  <wsdl:message name="GetChiamanteCampagnaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChiamanteCampagnaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DinamichePromozionaliServicesSoap">
+    <wsdl:operation name="GetManagementPrize">
+      <wsdl:input message="tns:GetManagementPrizeSoapIn" />
+      <wsdl:output message="tns:GetManagementPrizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusCampaign">
+      <wsdl:input message="tns:GetStatusCampaignSoapIn" />
+      <wsdl:output message="tns:GetStatusCampaignSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPrivacy">
+      <wsdl:input message="tns:SetPrivacySoapIn" />
+      <wsdl:output message="tns:SetPrivacySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOnlyPrivacy">
+      <wsdl:input message="tns:SetOnlyPrivacySoapIn" />
+      <wsdl:output message="tns:SetOnlyPrivacySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChiamanteCampagna">
+      <wsdl:input message="tns:GetChiamanteCampagnaSoapIn" />
+      <wsdl:output message="tns:GetChiamanteCampagnaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DinamichePromozionaliServicesSoap" type="tns:DinamichePromozionaliServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetManagementPrize">
+      <soap:operation soapAction="http://tempuri.org/GetManagementPrize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusCampaign">
+      <soap:operation soapAction="http://tempuri.org/GetStatusCampaign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPrivacy">
+      <soap:operation soapAction="http://tempuri.org/SetPrivacy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetOnlyPrivacy">
+      <soap:operation soapAction="http://tempuri.org/SetOnlyPrivacy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChiamanteCampagna">
+      <soap:operation soapAction="http://tempuri.org/GetChiamanteCampagna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DinamichePromozionaliServicesSoap12" type="tns:DinamichePromozionaliServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetManagementPrize">
+      <soap12:operation soapAction="http://tempuri.org/GetManagementPrize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusCampaign">
+      <soap12:operation soapAction="http://tempuri.org/GetStatusCampaign" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPrivacy">
+      <soap12:operation soapAction="http://tempuri.org/SetPrivacy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetOnlyPrivacy">
+      <soap12:operation soapAction="http://tempuri.org/SetOnlyPrivacy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChiamanteCampagna">
+      <soap12:operation soapAction="http://tempuri.org/GetChiamanteCampagna" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DinamichePromozionaliServices">
+    <wsdl:port name="DinamichePromozionaliServicesSoap" binding="tns:DinamichePromozionaliServicesSoap">
+      <soap:address location="http://localhost:60908/DinamichePromozionaliServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DinamichePromozionaliServicesSoap12" binding="tns:DinamichePromozionaliServicesSoap12">
+      <soap12:address location="http://localhost:60908/DinamichePromozionaliServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

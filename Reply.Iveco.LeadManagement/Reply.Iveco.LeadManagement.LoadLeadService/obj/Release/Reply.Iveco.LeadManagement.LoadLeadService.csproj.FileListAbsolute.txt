@@ -1,0 +1,13 @@
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\bin\Release\Configurator.xml
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\bin\Release\Reply.Iveco.LeadManagement.LoadLeadService.exe.config
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\bin\Release\Reply.Iveco.LeadManagement.LoadLeadService.exe
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\bin\Release\Reply.Iveco.LeadManagement.LoadLeadService.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\bin\Release\Reply.Iveco.LeadManagement.Presenter.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\bin\Release\Reply.Iveco.LeadManagement.Presenter.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\bin\Release\Reply.Iveco.LeadManagement.Presenter.XmlSerializers.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\obj\Release\ResolveAssemblyReference.cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\obj\Release\Reply.Iveco.LeadManagement.LoadLeadService.LoadLead.resources
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\obj\Release\Reply.Iveco.LeadManagement.LoadLeadService.ProjectInstaller.resources
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\obj\Release\Reply.Iveco.LeadManagement.LoadLeadService.csproj.GenerateResource.Cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\obj\Release\Reply.Iveco.LeadManagement.LoadLeadService.exe
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadLeadService\obj\Release\Reply.Iveco.LeadManagement.LoadLeadService.pdb

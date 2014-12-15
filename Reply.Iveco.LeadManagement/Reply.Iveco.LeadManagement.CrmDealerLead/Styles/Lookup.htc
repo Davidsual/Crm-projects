@@ -1,0 +1,27 @@
+﻿<public:component lightweight="true">
+<public:attach event="onmouseover"	onevent="glowOn()"/>
+<public:attach event="onmouseout"	onevent="glowOff()"/>
+<public:attach event="onmousedown"	onevent="downOn()"/>
+<public:attach event="onmouseup"	onevent="downOff()"/>
+<script language="JavaScript">
+
+
+</script><!-- size=4 --><script type="text/javascript">function glowOn()
+{
+element.src = element.imgBase + "h.gif";
+}
+</script><!-- size=71 --><script type="text/javascript">function glowOff()
+{
+element.src = element.imgBase + ".gif";
+}
+</script><!-- size=67 --><script type="text/javascript">function downOn()
+{
+if (!element.hideDown)
+element.src = element.imgBase + "d.gif";
+}
+</script><!-- size=101 --><script type="text/javascript">function downOff()
+{
+element.src = element.imgBase + ".gif";
+}
+</script><!-- size=67 -->
+</public:component>

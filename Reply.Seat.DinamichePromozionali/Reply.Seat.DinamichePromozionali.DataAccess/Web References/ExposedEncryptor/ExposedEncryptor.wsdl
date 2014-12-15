@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="EncryptNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clearNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cipherNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DecryptNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EncryptNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptNumber" />
+  </wsdl:message>
+  <wsdl:message name="EncryptNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="DecryptNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:DecryptNumber" />
+  </wsdl:message>
+  <wsdl:message name="DecryptNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:DecryptNumberResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ExposedEncryptorSoap">
+    <wsdl:operation name="EncryptNumber">
+      <wsdl:input message="tns:EncryptNumberSoapIn" />
+      <wsdl:output message="tns:EncryptNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptNumber">
+      <wsdl:input message="tns:DecryptNumberSoapIn" />
+      <wsdl:output message="tns:DecryptNumberSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExposedEncryptorSoap" type="tns:ExposedEncryptorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EncryptNumber">
+      <soap:operation soapAction="http://tempuri.org/EncryptNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptNumber">
+      <soap:operation soapAction="http://tempuri.org/DecryptNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExposedEncryptorSoap12" type="tns:ExposedEncryptorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EncryptNumber">
+      <soap12:operation soapAction="http://tempuri.org/EncryptNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptNumber">
+      <soap12:operation soapAction="http://tempuri.org/DecryptNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExposedEncryptor">
+    <wsdl:port name="ExposedEncryptorSoap" binding="tns:ExposedEncryptorSoap">
+      <soap:address location="http://cntap101.seat.it/RealTimeFlowTest/ExposedEncryptor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExposedEncryptorSoap12" binding="tns:ExposedEncryptorSoap12">
+      <soap12:address location="http://cntap101.seat.it/RealTimeFlowTest/ExposedEncryptor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

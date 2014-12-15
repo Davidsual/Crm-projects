@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Reply.Iveco.LeadManagement.Web.UI.Test.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Reply_Iveco_LeadManagement_Web_UI_Test_LeadManagementServiceBasic_LeadManagementServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:29540/services/LeadManagementServices.asmx</Value>
+    </Setting>
+    <Setting Name="Reply_Iveco_LeadManagement_Web_UI_Test_LeadManagementServiceBase_LeadManagementServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.88.22/CustomLMCERT/Services/LeadManagementServices.asmx</Value>
+    </Setting>
+    <Setting Name="Reply_Iveco_LeadManagement_Web_UI_Test_CrmDealerServices_CrmDealerServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:29540/services/CrmDealerServices.asmx</Value>
+    </Setting>
+    <Setting Name="Reply_Iveco_LeadManagement_Web_UI_Test_CrmMobileService_LeadManagementMobileService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:29540/services/LeadManagementMobileService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

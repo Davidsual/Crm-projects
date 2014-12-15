@@ -1,0 +1,7 @@
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.CrmDealerLead\bin\Reply.Iveco.LeadManagement.CrmDealerLead.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.CrmDealerLead\bin\Reply.Iveco.LeadManagement.CrmDealerLead.XmlSerializers.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.CrmDealerLead\bin\Reply.Iveco.LeadManagement.CrmDealerLead.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.CrmDealerLead\obj\Release\ResolveAssemblyReference.cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.CrmDealerLead\obj\Release\Reply.Iveco.LeadManagement.CrmDealerLead.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.CrmDealerLead\obj\Release\Reply.Iveco.LeadManagement.CrmDealerLead.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.CrmDealerLead\obj\Release\Reply.Iveco.LeadManagement.CrmDealerLead.XmlSerializers.dll

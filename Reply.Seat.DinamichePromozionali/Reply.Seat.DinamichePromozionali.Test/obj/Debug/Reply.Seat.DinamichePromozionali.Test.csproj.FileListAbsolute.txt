@@ -1,0 +1,14 @@
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\bin\Debug\Reply.Seat.DinamichePromozionali.Test.exe.config
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\bin\Debug\Reply.Seat.DinamichePromozionali.Test.exe
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\bin\Debug\Reply.Seat.DinamichePromozionali.Test.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\TestServiceSeat.baml
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\TestServiceSeat.g.cs
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\App.g.cs
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\Reply.Seat.DinamichePromozionali.Test_MarkupCompile.cache
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\Reply.Seat.DinamichePromozionali.Test.g.resources
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\Reply.Seat.DinamichePromozionali.Test.Properties.Resources.resources
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\Reply.Seat.DinamichePromozionali.Test.exe
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Test\obj\Debug\Reply.Seat.DinamichePromozionali.Test.pdb

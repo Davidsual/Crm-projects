@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20.625, 29.875" name="MarketingSeat">
+  <DataContextMoniker Name="/MarketingSeatDataContext" />
+  <nestedChildShapes>
+    <classShape Id="23b45a9e-7aa6-4085-b3ca-b9bf042808bf" absoluteBounds="0.5, 0.5, 2, 19.654930013020834">
+      <DataClassMoniker Name="/MarketingSeatDataContext/Campaign" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5c69230-2d5e-4666-8393-7c50a98be1f6" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 19.094930013020832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54d3dc99-7672-42c8-89a2-8862fff7725b" absoluteBounds="6.375, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MarketingSeatDataContext/new_campaign_new_calltype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4fde573-7d89-44b8-9f48-c43b1565760e" absoluteBounds="6.39, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f0d4b9f-5f17-4c76-8485-ceefdee87875" absoluteBounds="6.375, 3.75, 2, 6.0015283203124987">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_numeratore" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a623fded-ee7d-46f6-9101-a4279cdf0b07" absoluteBounds="6.39, 4.21, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9de0ce9c-00fd-4283-a402-168788313d09" absoluteBounds="9.375, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MarketingSeatDataContext/new_campaign_new_premio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22c5dfd4-6ce8-4d8f-9e65-1a31e258bd32" absoluteBounds="9.39, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f145316-90ec-4157-8e58-d0a6a98a8e4b" absoluteBounds="12.375, 0.75, 2, 7.1553369140624987">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_codicepromozionale" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce3cfcf0-c6eb-4795-b9d3-036d8e863f42" absoluteBounds="12.39, 1.21, 1.9700000000000002, 6.5953369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c861f26-7875-4e3b-b243-5b409d9371bd" absoluteBounds="12.375, 8.75, 2, 6.9630354817708309">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_oggetto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67e2eee9-1855-4534-9535-5f1829114e35" absoluteBounds="12.39, 9.21, 1.9700000000000002, 6.403035481770833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a85d20ce-0707-4a25-9e3e-9d1ec87c2eca" absoluteBounds="15.375, 0.75, 2, 8.3091455078125023">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_premio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e459f0d0-6fdf-4d85-9cd1-3f49e2a945fb" absoluteBounds="15.39, 1.21, 1.9700000000000002, 7.7491455078125009" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="966b2e2c-b097-4fdd-8577-1583798a528c" absoluteBounds="15.375, 9.5, 2, 7.1553369140624987">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_calltype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a58fd06-b8d9-475c-b3b2-33fa96eae5af" absoluteBounds="15.39, 9.96, 1.9700000000000002, 6.5953369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46be06cb-74e2-4c69-9719-de935c330613" absoluteBounds="18.375, 0.75, 2, 6.1938297526041666">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_call" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f733a1a-8842-4429-a86f-7a23793029b4" absoluteBounds="18.39, 1.21, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="374592ed-1212-41b0-9411-a1e512c9da98" absoluteBounds="18.375, 7.625, 2, 9.0783512369791648">
+      <DataClassMoniker Name="/MarketingSeatDataContext/List" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1cb44304-242a-4ba4-bb27-3faa73b5eee4" absoluteBounds="18.39, 8.085, 1.9700000000000002, 8.5183512369791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e286731-6f58-4b2a-b394-fd93e0a99c03" absoluteBounds="9.25, 3.25, 2, 7.9245426432291648">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_chiamantecampagna" />
+      <nestedChildShapes>
+        <elementListCompartment Id="775d6cb4-9b06-4161-b917-d1c023a997d0" absoluteBounds="9.265, 3.71, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06a8e25f-3978-4244-af45-cebf9a7e668d" absoluteBounds="9.625, 12.125, 2, 7.7322412109375005">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_callgratuita" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1405fc17-2837-4e3e-96fa-d177ca5ac712" absoluteBounds="9.64, 12.585, 1.9700000000000002, 7.1722412109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84886aa9-e912-4b71-aa2d-0ddbf0cb5180" absoluteBounds="3.25, 0.5, 2, 29.077700195312502">
+      <DataClassMoniker Name="/MarketingSeatDataContext/Lead" />
+      <nestedChildShapes>
+        <elementListCompartment Id="abaf1483-ded9-48ea-abd1-c07fff932c7d" absoluteBounds="3.265, 0.96, 1.9700000000000002, 28.5177001953125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f46bd253-c117-4223-817e-bfb5e6ab8bba" absoluteBounds="6.25, 10.125, 2, 7.1553369140625">
+      <DataClassMoniker Name="/MarketingSeatDataContext/New_sm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="526112fc-71db-48cc-a806-7815d9f36866" absoluteBounds="6.265, 10.585, 1.9700000000000002, 6.5953369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

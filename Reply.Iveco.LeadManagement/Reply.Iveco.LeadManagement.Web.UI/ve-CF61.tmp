@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.Text;
+using Reply.Iveco.LeadManagement.Presenter;
+
+namespace Reply.Iveco.LeadManagement.Web.UI
+{
+    // NOTE: If you change the interface name "ILeadManagementService" here, you must also update the reference to "ILeadManagementService" in Web.config.
+    [ServiceContract]
+    public interface ILeadManagementService
+    {
+        [OperationContract]
+        SetAppointmentResult SetAppointment(Reply.Iveco.LeadManagement.Presenter.Model.DataConstant.TypeService typeService,CallBackData callbackData,DateTime startDate,DateTime endDate);
+        [OperationContract]
+        GetCalendarResult GetCalendar(string country, string language);
+        [OperationContract]
+        SetDealerResult SetDealer(SetDealerParameter dealerParameter);
+    }
+}

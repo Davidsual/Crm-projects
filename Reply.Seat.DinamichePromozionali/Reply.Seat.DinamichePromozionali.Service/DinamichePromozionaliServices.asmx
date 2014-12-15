@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="DinamichePromozionaliServices.asmx.cs" Class="Reply.Seat.DinamichePromozionali.Service.DinamichePromozionaliServices" %>

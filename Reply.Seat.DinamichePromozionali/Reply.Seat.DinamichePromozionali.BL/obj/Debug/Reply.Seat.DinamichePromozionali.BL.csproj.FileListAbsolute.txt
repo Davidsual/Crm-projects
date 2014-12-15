@@ -1,0 +1,12 @@
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\Reply.Seat.DinamichePromozionali.BL.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\Reply.Seat.DinamichePromozionali.BL.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\CrmServicePerformance.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\log4net.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\Reply.Seat.DinamichePromozionali.CrmAdapter.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\Reply.Seat.DinamichePromozionali.DataAccess.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\Reply.Seat.DinamichePromozionali.CrmAdapter.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\Reply.Seat.DinamichePromozionali.DataAccess.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\bin\Debug\CrmServicePerformance.XmlSerializers.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\obj\Debug\Reply.Seat.DinamichePromozionali.BL.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.BL\obj\Debug\Reply.Seat.DinamichePromozionali.BL.pdb

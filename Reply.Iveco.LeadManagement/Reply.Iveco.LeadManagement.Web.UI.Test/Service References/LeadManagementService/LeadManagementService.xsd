@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:29540/services/LeadManagementService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter.Model" />
+  <xs:import schemaLocation="http://localhost:29540/services/LeadManagementService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter" />
+  <xs:element name="SetAppointment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter.Model" minOccurs="0" name="typeService" type="q1:DataConstant.TypeService" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter" minOccurs="0" name="callbackData" nillable="true" type="q2:CallBackData" />
+        <xs:element minOccurs="0" name="startDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAppointmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter" minOccurs="0" name="SetAppointmentResult" nillable="true" type="q3:SetAppointmentResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCalendar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="country" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="language" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCalendarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter" minOccurs="0" name="GetCalendarResult" nillable="true" type="q4:GetCalendarResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDealer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter" minOccurs="0" name="dealerParameter" nillable="true" type="q5:SetDealerParameter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDealerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter" minOccurs="0" name="SetDealerResult" nillable="true" type="q6:SetDealerResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

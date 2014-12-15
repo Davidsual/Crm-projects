@@ -1,0 +1,8 @@
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnCreatePlugin\bin\Debug\Reply.Iveco.LeadManagement.DossierOnCreatePlugin.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnCreatePlugin\bin\Debug\Reply.Iveco.LeadManagement.DossierOnCreatePlugin.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnCreatePlugin\bin\Debug\microsoft.xrm.client.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnCreatePlugin\bin\Debug\microsoft.xrm.portal.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnCreatePlugin\bin\Debug\microsoft.xrm.portal.files.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnCreatePlugin\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnCreatePlugin\obj\Debug\Reply.Iveco.LeadManagement.DossierOnCreatePlugin.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnCreatePlugin\obj\Debug\Reply.Iveco.LeadManagement.DossierOnCreatePlugin.pdb

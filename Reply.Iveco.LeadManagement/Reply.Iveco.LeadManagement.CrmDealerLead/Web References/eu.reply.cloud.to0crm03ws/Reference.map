@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://to0crm03ws.cloud.reply.eu:8080/LeadManagement/services/LeadManagementServices.asmx?disco" filename="LeadManagementServices.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://to0crm03ws.cloud.reply.eu:8080/LeadManagement/services/LeadManagementServices.asmx?wsdl" filename="LeadManagementServices.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

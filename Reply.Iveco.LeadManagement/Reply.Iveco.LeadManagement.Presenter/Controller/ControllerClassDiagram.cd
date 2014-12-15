@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Reply.Iveco.LeadManagement.Presenter.LeadManagementController">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAIAAAAAAAAAAAAAAAAAAIAAAQAAAAAA=</HashCode>
+      <FileName>Controller\LeadManagementController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Reply.Iveco.LeadManagement.Presenter.BaseLeadManagementController">
+    <Position X="0.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAAgAAAAAAAAAAAAYAQAEAAAAEAAAAAA=</HashCode>
+      <FileName>Controller\BaseLeadManagementController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

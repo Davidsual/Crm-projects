@@ -1,0 +1,9 @@
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\bin\Debug\Reply.Iveco.LeadManagement.Services.Test.exe
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\bin\Debug\Reply.Iveco.LeadManagement.Services.Test.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\bin\Debug\Reply.Iveco.LeadManagement.Presenter.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\bin\Debug\Reply.Iveco.LeadManagement.Presenter.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\obj\Debug\Reply.Iveco.LeadManagement.Services.Test.Properties.Resources.resources
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\obj\Debug\Reply.Iveco.LeadManagement.Services.Test.csproj.GenerateResource.Cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\obj\Debug\Reply.Iveco.LeadManagement.Services.Test.exe
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.Services.Test\obj\Debug\Reply.Iveco.LeadManagement.Services.Test.pdb

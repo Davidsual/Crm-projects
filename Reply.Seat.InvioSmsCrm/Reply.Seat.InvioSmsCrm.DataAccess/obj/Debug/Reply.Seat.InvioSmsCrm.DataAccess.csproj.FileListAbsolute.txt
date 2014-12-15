@@ -1,0 +1,6 @@
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAccess\bin\Debug\Reply.Seat.InvioSmsCrm.DataAccess.dll.config
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAccess\bin\Debug\Reply.Seat.InvioSmsCrm.DataAccess.dll
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAccess\bin\Debug\Reply.Seat.InvioSmsCrm.DataAccess.pdb
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAccess\obj\Debug\Reply.Seat.InvioSmsCrm.DataAccess.dll
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAccess\obj\Debug\Reply.Seat.InvioSmsCrm.DataAccess.pdb

@@ -1,0 +1,11 @@
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\bin\Debug\Reply.Seat.InvioSmsCrm.WindowsService.exe
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\bin\Debug\Reply.Seat.InvioSmsCrm.WindowsService.pdb
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\obj\Debug\Reply.Seat.InvioSmsCrm.WindowsService.exe
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\obj\Debug\Reply.Seat.InvioSmsCrm.WindowsService.pdb
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\bin\Debug\Reply.Seat.InvioSmsCrm.CrmAdapter.dll
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\bin\Debug\Reply.Seat.InvioSmsCrm.DataAccess.dll
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\bin\Debug\CrmServicePerformance.dll
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\bin\Debug\Reply.Seat.InvioSmsCrm.CrmAdapter.pdb
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\bin\Debug\Reply.Seat.InvioSmsCrm.DataAccess.pdb
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.WindowsService\bin\Debug\CrmServicePerformance.XmlSerializers.dll

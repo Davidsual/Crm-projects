@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="_http://schemas.microsoft.com/crm/2006/WebServices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="_http://schemas.microsoft.com/crm/2006/WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="_http://schemas.microsoft.com/crm/2006/WebServices">
+      <s:element name="SetLead">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lead" type="tns:ContactLead" />
+            <s:element minOccurs="0" maxOccurs="1" name="orgName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ContactLead">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IDLeadExternal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IDLeadCRMLead" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Canale" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Campagna" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Customer_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Customer_Surname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Company_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZipCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EnderecoPostal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hamlet" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobilePhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OfficeNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProfilingDataH" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CriticalCustomer" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodicePromozione" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FlagPrivacy" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MotivazioneCriticalCustomer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeContact" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NotaProdottoDiInteresse" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NotaUsato" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NotaCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VATCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TAXCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LegalForm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumberOfEmployees" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AnnualRevenue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetLeadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetLeadResult" type="tns:SetLeadResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetLeadResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SetLeadSoapIn">
+    <wsdl:part name="parameters" element="tns:SetLead" />
+  </wsdl:message>
+  <wsdl:message name="SetLeadSoapOut">
+    <wsdl:part name="parameters" element="tns:SetLeadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CrmDealerServicesSoap">
+    <wsdl:operation name="SetLead">
+      <wsdl:input message="tns:SetLeadSoapIn" />
+      <wsdl:output message="tns:SetLeadSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CrmDealerServicesSoap" type="tns:CrmDealerServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetLead">
+      <soap:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/SetLead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CrmDealerServicesSoap12" type="tns:CrmDealerServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetLead">
+      <soap12:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/SetLead" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CrmDealerServices">
+    <wsdl:port name="CrmDealerServicesSoap" binding="tns:CrmDealerServicesSoap">
+      <soap:address location="http://localhost:29540/services/CrmDealerServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CrmDealerServicesSoap12" binding="tns:CrmDealerServicesSoap12">
+      <soap12:address location="http://localhost:29540/services/CrmDealerServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

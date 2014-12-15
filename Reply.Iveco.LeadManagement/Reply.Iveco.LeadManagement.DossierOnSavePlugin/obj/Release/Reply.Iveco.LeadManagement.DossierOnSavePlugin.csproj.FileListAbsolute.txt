@@ -1,0 +1,8 @@
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnSavePlugin\bin\Release\Reply.Iveco.LeadManagement.DossierOnSavePlugin.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnSavePlugin\bin\Release\Reply.Iveco.LeadManagement.DossierOnSavePlugin.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnSavePlugin\bin\Release\microsoft.xrm.client.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnSavePlugin\bin\Release\microsoft.xrm.portal.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnSavePlugin\bin\Release\microsoft.xrm.portal.files.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnSavePlugin\obj\Release\ResolveAssemblyReference.cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnSavePlugin\obj\Release\Reply.Iveco.LeadManagement.DossierOnSavePlugin.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.DossierOnSavePlugin\obj\Release\Reply.Iveco.LeadManagement.DossierOnSavePlugin.pdb

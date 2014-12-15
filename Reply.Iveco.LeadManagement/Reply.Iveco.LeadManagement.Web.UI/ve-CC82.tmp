@@ -1,0 +1,356 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" EnableViewState="true" EnableEventValidation="false"
+    CodeBehind="LeadCreation.aspx.cs" Inherits="Reply.Iveco.LeadManagement.Web.UI.LeadCreation" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="css/Screen_common.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/core.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/Style.css" media="screen" />
+    <title>LeadManagement Test Page</title>
+</head>
+<body style="overflow: auto;">
+    <form id="form1" runat="server">
+    <center>
+        <h1>
+            Lead Creation</h1>
+    </center>
+    <asp:Panel runat="server" ID="pnlChiamata">
+        <table border="0" cellpadding="1" cellspacing="1" width="70%">
+            <tr>
+                <td style="width: 42%;">
+                    Name
+                </td>
+                <td>
+                    <asp:TextBox ID="txtNome" runat="server" Text="" Width="150"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Surname
+                </td>
+                <td>
+                    <asp:TextBox ID="txtCognome" runat="server" Text="" Width="150"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Telephone number&nbsp;<span style="color: Red;">*</span>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtTelNum" runat="server" Text="" Width="150"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E-Mail
+                </td>
+                <td>
+                    <asp:TextBox ID="txtEMail" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mobile phone number
+                </td>
+                <td>
+                    <asp:TextBox ID="txtNumCellPhone" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    Country&nbsp;<span style="color: Red;">*</span>
+                </td>
+                <td>
+                    <asp:DropDownList ID="ddlCountry" runat="server" Width="150" AutoPostBack="True"
+                        OnSelectedIndexChanged="ddlCountry_SelectedIndexChanged">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Language
+                </td>
+                <td>
+                    <asp:DropDownList ID="ddlLanguage" runat="server" Width="150">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    InitiativeSource
+                </td>
+                <td>
+                    <asp:TextBox ID="txtInitiativeSource" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    InitiativeSource Report
+                </td>
+                <td>
+                    <asp:TextBox ID="txtInitiativeSourceReport" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    InitiativeSource Report Detail
+                </td>
+                <td>
+                    <asp:TextBox ID="txtInitiativeSourceReportDetail" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Start Scheduling dd/mm/yyyy / hh:mm:ss
+                    <br />
+                    Greenwich's time
+                </td>
+                <td>
+                    <asp:TextBox ID="txtStartDate" runat="server"></asp:TextBox>&nbsp;/&nbsp;<asp:TextBox
+                        ID="txtStartTime" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    End Scheduling dd/mm/yyyy / hh:mm:ss
+                    <br />
+                    Greenwich's time
+                </td>
+                <td>
+                    <asp:TextBox ID="txtEndDate" runat="server"></asp:TextBox>&nbsp;/&nbsp;<asp:TextBox
+                        ID="txtEndTime" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Data Lead Creation
+                </td>
+                <td>
+                    <asp:TextBox ID="txtDataLeadCreation" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address
+                </td>
+                <td>
+                    <asp:TextBox ID="txtIndirizzo" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CAP
+                </td>
+                <td>
+                    <asp:TextBox ID="txtCap" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    City
+                </td>
+                <td>
+                    <asp:TextBox ID="txtCitta" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Province
+                </td>
+                <td>
+                    <asp:TextBox ID="txtProvincia" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Brand
+                </td>
+                <td>
+                    <asp:DropDownList ID="ddlBrand" runat="server" Width="150">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Model
+                </td>
+                <td>
+                    <asp:TextBox ID="txtModel" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Type
+                </td>
+                <td>
+                    <asp:TextBox ID="txtType" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    GVW
+                </td>
+                <td>
+                    <asp:TextBox ID="txtGVW" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Wheel Type
+                </td>
+                <td>
+                    <asp:TextBox ID="txtWheelType" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fuel
+                </td>
+                <td>
+                    <asp:TextBox ID="txtFuel" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Power
+                </td>
+                <td>
+                    <asp:TextBox ID="txtPower" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CabType
+                </td>
+                <td>
+                    <asp:TextBox ID="txtCabType" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Suspension
+                </td>
+                <td>
+                    <asp:TextBox ID="txtSuspension" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    id Care
+                </td>
+                <td>
+                    <asp:TextBox ID="txtIdCare" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Company Name
+                </td>
+                <td>
+                    <asp:TextBox ID="txtCompanyName" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CommentWebForm
+                </td>
+                <td>
+                    <asp:TextBox ID="txtCommentWebForm" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    idLeadSite
+                </td>
+                <td>
+                    <asp:TextBox ID="txtidLeadSite" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Title
+                </td>
+                <td>
+                    <asp:TextBox ID="txtTitle" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Code Promotion
+                </td>
+                <td>
+                    <asp:TextBox ID="txtCodePromotion" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Model of Interest
+                </td>
+                <td>
+                    <asp:TextBox ID="txtModelOfInterest" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    DesideredData
+                </td>
+                <td>
+                    <asp:TextBox ID="txtDesideredData" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Channel
+                </td>
+                <td>
+                    <asp:DropDownList ID="ddlCanale" runat="server" Width="150">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Stock Search Model
+                </td>
+                <td>
+                    <asp:TextBox ID="txtStockSearched" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Due Date
+                </td>
+                <td>
+                    <asp:TextBox ID="txtDueDate" runat="server" Width="150" Text=""></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Type Contact
+                </td>
+                <td>
+                    <asp:DropDownList ID="ddlTypeContact" runat="server" Width="150">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <asp:Button ID="Button1" runat="server" Text="ASAP" OnClick="Button1_Click" />
+                </td>
+                <td align="center">
+                    <asp:Button ID="Button2" runat="server" Text="BOOKING" OnClick="Button2_Click" />
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+    </asp:Panel>
+    <asp:Label runat="server" ID="lblErrore"></asp:Label>
+    </form>
+</body>
+</html>

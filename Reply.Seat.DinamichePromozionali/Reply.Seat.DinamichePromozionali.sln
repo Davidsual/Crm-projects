@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Seat.DinamichePromozionali.Service", "Reply.Seat.DinamichePromozionali.Service\Reply.Seat.DinamichePromozionali.Service.csproj", "{F01287A6-631E-4B72-9158-7B5A9F0AD217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Seat.DinamichePromozionali.CrmAdapter", "Reply.Seat.DinamichePromozionali.CrmAdapter\Reply.Seat.DinamichePromozionali.CrmAdapter.csproj", "{0FEC04A9-CFF2-4631-9A4D-37B9C7A027A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Seat.DinamichePromozionali.BL", "Reply.Seat.DinamichePromozionali.BL\Reply.Seat.DinamichePromozionali.BL.csproj", "{9273F6AE-EB99-4071-8070-EC6098ADEA6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Seat.DinamichePromozionali.DataAccess", "Reply.Seat.DinamichePromozionali.DataAccess\Reply.Seat.DinamichePromozionali.DataAccess.csproj", "{307D89CD-D1D9-40D6-9F36-115C568D5712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reply.Seat.DinamichePromozionali.Test", "Reply.Seat.DinamichePromozionali.Test\Reply.Seat.DinamichePromozionali.Test.csproj", "{2EBE8138-DDBC-45AE-A86C-AE699E96F969}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F01287A6-631E-4B72-9158-7B5A9F0AD217} = {F01287A6-631E-4B72-9158-7B5A9F0AD217}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsaws.reply.it/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Reply.Seat.DinamichePromozionali.BL\\Reply.Seat.DinamichePromozionali.BL.csproj
+		SccProjectName1 = Reply.Seat.DinamichePromozionali.BL
+		SccLocalPath1 = Reply.Seat.DinamichePromozionali.BL
+		SccProjectUniqueName2 = Reply.Seat.DinamichePromozionali.CrmAdapter\\Reply.Seat.DinamichePromozionali.CrmAdapter.csproj
+		SccProjectName2 = Reply.Seat.DinamichePromozionali.CrmAdapter
+		SccLocalPath2 = Reply.Seat.DinamichePromozionali.CrmAdapter
+		SccProjectUniqueName3 = Reply.Seat.DinamichePromozionali.DataAccess\\Reply.Seat.DinamichePromozionali.DataAccess.csproj
+		SccProjectName3 = Reply.Seat.DinamichePromozionali.DataAccess
+		SccLocalPath3 = Reply.Seat.DinamichePromozionali.DataAccess
+		SccProjectUniqueName4 = Reply.Seat.DinamichePromozionali.Service\\Reply.Seat.DinamichePromozionali.Service.csproj
+		SccProjectName4 = Reply.Seat.DinamichePromozionali.Service
+		SccLocalPath4 = Reply.Seat.DinamichePromozionali.Service
+		SccProjectUniqueName5 = Reply.Seat.DinamichePromozionali.Test\\Reply.Seat.DinamichePromozionali.Test.csproj
+		SccProjectName5 = Reply.Seat.DinamichePromozionali.Test
+		SccLocalPath5 = Reply.Seat.DinamichePromozionali.Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F01287A6-631E-4B72-9158-7B5A9F0AD217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01287A6-631E-4B72-9158-7B5A9F0AD217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01287A6-631E-4B72-9158-7B5A9F0AD217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01287A6-631E-4B72-9158-7B5A9F0AD217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FEC04A9-CFF2-4631-9A4D-37B9C7A027A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FEC04A9-CFF2-4631-9A4D-37B9C7A027A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FEC04A9-CFF2-4631-9A4D-37B9C7A027A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FEC04A9-CFF2-4631-9A4D-37B9C7A027A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9273F6AE-EB99-4071-8070-EC6098ADEA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9273F6AE-EB99-4071-8070-EC6098ADEA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9273F6AE-EB99-4071-8070-EC6098ADEA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9273F6AE-EB99-4071-8070-EC6098ADEA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{307D89CD-D1D9-40D6-9F36-115C568D5712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307D89CD-D1D9-40D6-9F36-115C568D5712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307D89CD-D1D9-40D6-9F36-115C568D5712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307D89CD-D1D9-40D6-9F36-115C568D5712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EBE8138-DDBC-45AE-A86C-AE699E96F969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EBE8138-DDBC-45AE-A86C-AE699E96F969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EBE8138-DDBC-45AE-A86C-AE699E96F969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EBE8138-DDBC-45AE-A86C-AE699E96F969}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

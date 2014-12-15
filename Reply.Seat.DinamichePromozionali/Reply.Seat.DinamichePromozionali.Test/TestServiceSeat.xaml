@@ -1,0 +1,80 @@
+﻿<Window x:Class="Reply.Seat.DinamichePromozionali.Test.TestServiceSeat"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="680" Width="532" Background="GhostWhite" BorderThickness="1" Loaded="Window_Loaded">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="26"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="26"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="26"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="26"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="26"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="10"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="22"></RowDefinition>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="1" Name="txtIdCall" Width="200" HorizontalAlignment="Left">30</TextBox>
+        <Label Grid.Row="0" HorizontalAlignment="Left">Id Call</Label>
+        <TextBox Grid.Row="3" Name="txtCallType" Width="200" HorizontalAlignment="Left">1240C</TextBox>
+        <Label Grid.Row="2" HorizontalAlignment="Left">Call Type</Label>
+        <TextBox Grid.Row="5" Name="txtCryptedCode" Width="200" HorizontalAlignment="Left">813E702C3A92801D5E295A6FCAF09050</TextBox>
+        <Label Grid.Row="4" HorizontalAlignment="Left">Crypted Code</Label>
+        <TextBox Grid.Row="7" Name="txtPhoneNumber" Width="200" HorizontalAlignment="Left">0112911737</TextBox>
+        <Label Grid.Row="6" HorizontalAlignment="Left">Phone Number</Label>
+        <TextBox Grid.Row="9" Name="txtIdOperator" Width="200" HorizontalAlignment="Left" BorderThickness="1">123456</TextBox>
+        <Label Grid.Row="8" HorizontalAlignment="Left">Id Operator</Label>
+        <Label Grid.Row="10" HorizontalAlignment="Left">ID Chiamante Campagna</Label>
+        <TextBox Grid.Row="11" Name="txtIdChiamanteCampagna" Width="200" HorizontalAlignment="Left" BorderThickness="1">F77D59E6-AA12-4E36-B990-BA45F2D3AE44</TextBox>
+        <Button Grid.Row="12" Content="GetStatusCampaign" Click="Button_Click" Width="100" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FC000000" Offset="0"/> 
+                    <GradientStop Color="#15FFFFFF" Offset="1"/> 
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="12" Content="GetManagementPrize" Margin="106,6,270,0" Height="22" VerticalAlignment="Top" Click="Button_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FC000000" Offset="0"/>
+                    <GradientStop Color="#15FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="12" Content="SetPrivacy"  Width="64" HorizontalAlignment="Right" Height="21.96" Margin="0,6,200,0" VerticalAlignment="Top" Click="Button_Click_2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FC000000" Offset="0"/>
+                    <GradientStop Color="#15FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="12" Content="SetOnlyPrivacy"  Width="89" HorizontalAlignment="Left" Height="21.96" VerticalAlignment="Top" Margin="313,6,0,0" Name="btnOnlyPrivacy" Click="btnOnlyPrivacy_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FC000000" Offset="0"/>
+                    <GradientStop Color="#15FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Grid.Row="12" Content="GetChiamCamp"  Width="100" HorizontalAlignment="Left" Height="21.96" Margin="408,6,0,0" VerticalAlignment="Top" Name="btnChiamCamp" Click="Button_Click_3">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FC000000" Offset="0"/>
+                    <GradientStop Color="#15FFFFFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txtResult" Grid.Row="13" Height="300" Background="WhiteSmoke" ></TextBox>
+        <TextBox x:Name="txtUrlServer" Grid.Row="14" Background="Silver"></TextBox>
+    </Grid>
+</Window>

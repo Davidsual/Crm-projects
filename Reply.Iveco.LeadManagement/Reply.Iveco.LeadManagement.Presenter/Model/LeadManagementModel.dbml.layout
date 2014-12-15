@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 26.875, 73.875" name="LeadManagementModel">
+  <DataContextMoniker Name="/LeadManagementModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="09514247-2897-42a0-addf-836332bdb284" absoluteBounds="5, 0.5, 2, 6.9630354817708326">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/Service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd2fea8b-91a2-440d-b2d2-aba0cc2f7144" absoluteBounds="5.015, 0.96, 1.9700000000000002, 6.403035481770833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12ccf60e-454e-4dfd-889f-ab9a4f36ecaf" absoluteBounds="2.75, 8.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/TimeZoneRule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b04eb0d9-ed90-4cb2-9035-145caa56837b" absoluteBounds="2.765, 8.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c99a74b-2959-4a36-925d-6c630af6e306" absoluteBounds="0.5, 8.5, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/TimeZoneDefinition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d4b5b5c-8951-473b-9fc2-ea12f784e09d" absoluteBounds="0.51500000000000012, 8.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ffe3fa49-34ab-4cda-8eab-a7a3653e3608" absoluteBounds="7.375, 2.875, 2.375, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_productmodel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="700ab2c7-758e-4c70-8942-7e81d5363e58" absoluteBounds="7.39, 3.3350000000000009, 2.3449999999999998, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b04889f-e954-4e02-8109-32160cf894e8" absoluteBounds="10, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_productpower" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b587ab01-806a-41a9-a47f-0ce7a5a324df" absoluteBounds="10.015, 3.4600000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42720fcc-23cc-4933-8239-4abe4844e38f" absoluteBounds="12.25, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_productgvw" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc554096-9316-4082-ad5f-368622d6d0db" absoluteBounds="12.265, 5.3350000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b820d51-e052-4e4c-842d-9aa727a41058" absoluteBounds="12.25, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_productfuel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e866d4df-3767-468a-b516-39a8f9b4560c" absoluteBounds="12.265, 3.4600000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a99d5ce8-958e-4b8c-ba7f-ee3b993cb4ab" absoluteBounds="10, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_productcabtype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78224cb9-92e3-4b5e-af2b-035e43fd76dd" absoluteBounds="10.015, 5.3350000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="abe400cb-c3d7-4689-a3ef-fb0f515f745b" absoluteBounds="7.375, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_productsuspensiontype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a47a6a6-4fa8-4229-8dac-b4dc8508efb5" absoluteBounds="7.3900000000000006, 5.3350000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="823472e4-e5af-430d-b894-6a0fa92ccbb6" absoluteBounds="10, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_producttype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5794163e-a627-4e13-b9b2-a612fb896bfb" absoluteBounds="10.015, 7.2100000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="369cbc17-7b1c-4514-9dac-393edb9dde2a" absoluteBounds="7.375, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_productwheeltype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3f9d5e3-765c-404e-9f75-99028e741e04" absoluteBounds="7.3900000000000006, 7.2100000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d59febf1-ee61-4aac-ad68-c1fbfc980fa1" absoluteBounds="12.25, 6.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_vehiclemodellist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="abb11366-4b3f-488f-8e53-8bd3777a2daf" absoluteBounds="12.265, 7.2100000000000009, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55db1215-db25-4cba-8fad-28afaa1d7c3f" absoluteBounds="12, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/QueueItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="655253c7-8818-4660-be07-3eea9f52ff7e" absoluteBounds="12.015, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e4350d0-1c1b-43ce-8089-d20efdd9d0dd" absoluteBounds="0.5, 5.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/ActivityParty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="deebecc2-0d8a-4a0c-b5f3-a568e2edbb53" absoluteBounds="0.51500000000000012, 6.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64af3bff-e34f-4648-b76e-fb9cfb05519f" absoluteBounds="17.125, 0.5, 2, 17.155011393229167">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/ServiceAppointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0723d85e-45f6-4b0b-a69e-7f4ec416c2cb" absoluteBounds="17.14, 0.96, 1.9700000000000002, 16.595011393229164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b97b0abd-1b54-48d9-a79e-8b4b1546cb33" absoluteBounds="19.625, 0.5, 2, 10.0398583984375">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_vehiclemodel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aab36250-ac4d-4f69-8df3-a657ad5cf7f6" absoluteBounds="19.64, 0.96, 1.9700000000000002, 9.4798583984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ac8582b-210b-4dc5-b64f-b2b3f3fe13d7" absoluteBounds="3, 10.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_gototab" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6348ea7b-4350-446f-864c-9371e88f629d" absoluteBounds="3.015, 10.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1c3fade-6601-4ad6-a77b-bb0ef57901b5" absoluteBounds="0.5, 0.5, 2, 3.1170068359375">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_servicesconfiguration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27addc86-112c-4210-a171-445701d0c50a" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e86e2ea-ab5e-46a2-b018-a47da53f9d6a" absoluteBounds="3, 3.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/ResourceGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ae170cb-42aa-49ef-b230-2324a291de40" absoluteBounds="3.015, 3.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c1a9f25-b2f6-4364-bc6e-09e2be349cd7" absoluteBounds="0.5, 4.125, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/ConstraintBasedGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="267da074-4d4c-4697-9389-f4d369e10c06" absoluteBounds="0.51500000000000012, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="369ac35a-4722-437f-a4bb-e6f37af00be0" absoluteBounds="2.875, 5.875, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/ResourceSpec" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d0c4b78-7a78-49b8-bb00-9066860369e8" absoluteBounds="2.89, 6.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b46d2507-1870-4f06-bf3a-402bea9fa82c" absoluteBounds="2.75, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_language" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c02dbc08-ed8c-47c0-91c9-74d4c67589b6" absoluteBounds="2.765, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d7d2814c-bd2e-46c8-973c-5751581d2bc2" absoluteBounds="22.25, 0.5, 2, 13.116681315104165">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_callback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="674a36bd-adb0-4c87-b9bf-0c7eaa0e1c11" absoluteBounds="22.265, 0.96, 1.9700000000000002, 12.556681315104166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81d0a722-b694-41d9-9e30-e91f1d943d13" absoluteBounds="14.625, 0.5, 2, 73.114728190104145">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/Contact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0ace5d0-cce3-4bec-a830-f2404a09445d" absoluteBounds="14.64, 0.96, 1.9700000000000002, 72.554728190104157" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2e7288a-2544-4ced-8189-6803469f333b" absoluteBounds="24.625, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_criticalcustomerreason" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57aa0bf0-0788-4653-a0cb-ba02491e5a82" absoluteBounds="24.64, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6ac46b7c-169e-4e57-8bd8-e8acbd7fc7ab" absoluteBounds="5.25, 7.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/SystemUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41b8dd5d-9475-458e-a5c5-51a71a8ff89b" absoluteBounds="5.265, 8.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75d862cf-890d-4fa1-b1a7-abd60cbbcdb1" absoluteBounds="24.625, 2.375, 2, 10.0398583984375">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_dealer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1f37b7f-7bfa-4abb-9ba2-0c50fc12778c" absoluteBounds="24.64, 2.835, 1.9700000000000002, 9.4798583984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b766b3d-278a-4aae-a2ea-115e1ad877af" absoluteBounds="5.25, 10.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/PickListValue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f088bd9f-2c82-432c-a0e3-3588ed518502" absoluteBounds="5.265, 11.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b78d60f8-43a7-4848-841f-1c3a6445c73f" absoluteBounds="0.5, 10.25, 2, 10.039858398437502">
+      <DataClassMoniker Name="/LeadManagementModelDataContext/New_country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46f4b292-a09f-42e8-8140-8b6b40ed5af0" absoluteBounds="0.51500000000000012, 10.71, 1.9700000000000002, 9.4798583984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

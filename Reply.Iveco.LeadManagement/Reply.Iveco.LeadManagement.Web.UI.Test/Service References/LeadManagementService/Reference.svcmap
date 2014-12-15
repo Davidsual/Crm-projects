@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="babc6b77-fdae-4612-9792-977f2c1760f1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.LinkedList`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:29540/services/LeadManagementService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LeadManagementService.xsd" MetadataType="Schema" ID="3f99dcfb-a5ee-4d24-a1f8-6ec91a672ea1" SourceId="1" SourceUrl="http://localhost:29540/services/LeadManagementService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LeadManagementService1.xsd" MetadataType="Schema" ID="c53677f4-8244-4340-ad99-02c8e1f793dd" SourceId="1" SourceUrl="http://localhost:29540/services/LeadManagementService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LeadManagementService2.xsd" MetadataType="Schema" ID="2fbeb9e1-4166-480e-a542-1615c5931ca2" SourceId="1" SourceUrl="http://localhost:29540/services/LeadManagementService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LeadManagementService.wsdl" MetadataType="Wsdl" ID="cb0a7648-9cae-4517-84a6-40ae6da8957a" SourceId="1" SourceUrl="http://localhost:29540/services/LeadManagementService.svc?wsdl" />
+    <MetadataFile FileName="LeadManagementService3.xsd" MetadataType="Schema" ID="54eb7eca-dceb-4372-af71-4499f281b712" SourceId="1" SourceUrl="http://localhost:29540/services/LeadManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LeadManagementService.disco" MetadataType="Disco" ID="0079daf3-5cad-4868-8cfd-6a85779d051f" SourceId="1" SourceUrl="http://localhost:29540/services/LeadManagementService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

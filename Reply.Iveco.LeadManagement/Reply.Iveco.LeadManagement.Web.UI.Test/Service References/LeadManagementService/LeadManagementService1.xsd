@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Reply.Iveco.LeadManagement.Presenter" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:29540/services/LeadManagementService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="CallBackData">
+    <xs:sequence>
+      <xs:element name="_x003C_Address_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Brand_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CabType_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Canale_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_City_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CodePromotion_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CommentWebForm_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CompanyName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CustomerName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_CustomerSurname_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DataLeadCreation_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_DesideredData_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_DueDate_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_EMail_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_FlagPrivacyDue_x003E_k__BackingField" nillable="true" type="xs:boolean" />
+      <xs:element name="_x003C_FlagPrivacy_x003E_k__BackingField" nillable="true" type="xs:boolean" />
+      <xs:element name="_x003C_Fuel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_GVW_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IdCare_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IdLeadSite_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_InitiativeSourceReportDetail_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_InitiativeSourceReport_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_InitiativeSource_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Language_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_MobilePhoneNumber_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ModelOfInterest_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Model_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Nation_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_PhoneNumber_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Power_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Province_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_StockSearchedModel_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Suspension_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Title_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_TypeContact_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Type_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_WheelType_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ZipCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallBackData" nillable="true" type="tns:CallBackData" />
+  <xs:complexType name="SetAppointmentResult">
+    <xs:sequence>
+      <xs:element name="_x003C_ErrorCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ErrorDescription_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IsSuccessful_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_endDate_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_startDate_x003E_k__BackingField" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SetAppointmentResult" nillable="true" type="tns:SetAppointmentResult" />
+  <xs:complexType name="GetCalendarResult">
+    <xs:sequence>
+      <xs:element name="_x003C_DataSchedulerCalendar_x003E_k__BackingField" nillable="true" type="tns:DataScheduler" />
+      <xs:element name="_x003C_ErrorCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ErrorDescription_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IsSuccessful_x003E_k__BackingField" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCalendarResult" nillable="true" type="tns:GetCalendarResult" />
+  <xs:complexType name="DataScheduler">
+    <xs:sequence>
+      <xs:element name="_x003C_LstColumn_x003E_k__BackingField" nillable="true" type="tns:ArrayOfDataSchedulerHeader" />
+      <xs:element name="_x003C_LstRow_x003E_k__BackingField" nillable="true" type="tns:ArrayOfDataSchedulerRow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataScheduler" nillable="true" type="tns:DataScheduler" />
+  <xs:complexType name="ArrayOfDataSchedulerHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataSchedulerHeader" nillable="true" type="tns:DataSchedulerHeader" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataSchedulerHeader" nillable="true" type="tns:ArrayOfDataSchedulerHeader" />
+  <xs:complexType name="DataSchedulerHeader">
+    <xs:sequence>
+      <xs:element name="_x003C_ColumnId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_ColumnName_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataSchedulerHeader" nillable="true" type="tns:DataSchedulerHeader" />
+  <xs:complexType name="ArrayOfDataSchedulerRow">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataSchedulerRow" nillable="true" type="tns:DataSchedulerRow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataSchedulerRow" nillable="true" type="tns:ArrayOfDataSchedulerRow" />
+  <xs:complexType name="DataSchedulerRow">
+    <xs:sequence>
+      <xs:element name="_x003C_LstDataSchedulerRowCell_x003E_k__BackingField" nillable="true" type="tns:ArrayOfDataSchedulerRowCell" />
+      <xs:element name="_x003C_RowId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_RowName_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataSchedulerRow" nillable="true" type="tns:DataSchedulerRow" />
+  <xs:complexType name="ArrayOfDataSchedulerRowCell">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataSchedulerRowCell" nillable="true" type="tns:DataSchedulerRowCell" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataSchedulerRowCell" nillable="true" type="tns:ArrayOfDataSchedulerRowCell" />
+  <xs:complexType name="DataSchedulerRowCell">
+    <xs:sequence>
+      <xs:element name="_x003C_CellName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ColumnId_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_IsSelected_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_RowId_x003E_k__BackingField" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataSchedulerRowCell" nillable="true" type="tns:DataSchedulerRowCell" />
+  <xs:complexType name="SetDealerParameter">
+    <xs:sequence>
+      <xs:element name="_x003C_DealerCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DealerCompanyName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DealerReferentEMail_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DealerResponsible_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IdLead_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_MarketingAccount_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SetDealerParameter" nillable="true" type="tns:SetDealerParameter" />
+  <xs:complexType name="SetDealerResult">
+    <xs:sequence>
+      <xs:element name="_x003C_ErrorCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ErrorDescription_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IsSuccessful_x003E_k__BackingField" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SetDealerResult" nillable="true" type="tns:SetDealerResult" />
+</xs:schema>

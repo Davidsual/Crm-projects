@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Labels>
+  <OK>
+    <Text lang="1033">Ok</Text>
+    <Text lang="2070">Ok</Text>
+    <Text lang="1040">Ok</Text>
+    <Text lang="1031">Ok</Text>
+  </OK>
+  <GENERIC_ERROR>
+    <Text lang="1033">Error</Text>
+    <Text lang="2070">Erro</Text>
+    <Text lang="1040">Errore</Text>
+    <Text lang="1031">Fehler</Text>
+  </GENERIC_ERROR>
+  <COMPLETED>
+    <Text lang="1033">Completed</Text>
+    <Text lang="2070">Completo</Text>
+    <Text lang="1040">Completato</Text>
+    <Text lang="1031">Fertig</Text>
+  </COMPLETED>
+  <DESCRIPTION_DIALOG_SELECTRECORD>
+    <Text lang="1033">Select one record</Text>
+    <Text lang="2070">Seleccione um registo</Text>
+    <Text lang="1040">Selezionare un record</Text>
+    <Text lang="1031">Einen Datensatz wählen</Text>
+  </DESCRIPTION_DIALOG_SELECTRECORD>
+  <MUST_BE_POSITIVE_RESP>
+    <Text lang="1033">It's impossible to create a follow-up for the selected campaign, but it's necessary to save it as completed. To schedule a follow-up pass the entity client and / or corresponding reference</Text>
+    <Text lang="1040">Per la risposta campagna selezionata non è possibile creare un prossimo impegno ma è necessario salvarlo come completato. Per pianificare un prossimo impegno passare dall’entità cliente e/o riferimento corrispondente</Text>
+  </MUST_BE_POSITIVE_RESP>
+  <LEAD_NOT_QUALIFIED>
+    <Text lang="1033">The lead is not qualified</Text>
+    <Text lang="1040">Per convertire in trattativa creare o associare il lead ad un cliente e/o riferimento</Text>
+  </LEAD_NOT_QUALIFIED>
+</Labels>

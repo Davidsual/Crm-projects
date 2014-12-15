@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Labels>
+  <QUEUEITEMS_HEADER>
+    <Text lang="1033">Start time;DateTime Contact 1;Result Contact 1;DateTime Contact 2;Result Contact 2;Overbooking Time</Text>
+    <Text lang="1040">Start time;DateTime Contact 1;Result Contact 1;DateTime Contact 2;Result Contact 2;Overbooking Time</Text>
+  </QUEUEITEMS_HEADER>
+  <RESULT_CONTACT_0>
+    <Text lang="1033"></Text>
+    <Text lang="1040"></Text>
+  </RESULT_CONTACT_0>
+  <RESULT_CONTACT_1>
+    <Text lang="1033">OK</Text>
+    <Text lang="1040">OK</Text>
+  </RESULT_CONTACT_1>
+  <RESULT_CONTACT_2>
+    <Text lang="1033">Busy</Text>
+    <Text lang="1040">Busy</Text>
+  </RESULT_CONTACT_2>
+  <RESULT_CONTACT_3>
+    <Text lang="1033">No Answer</Text>
+    <Text lang="1040">No Answer</Text>
+  </RESULT_CONTACT_3>
+  <RESULT_CONTACT_4>
+    <Text lang="1033">Recall On Date</Text>
+    <Text lang="1040">Recall On Date</Text>
+  </RESULT_CONTACT_4>
+  <RESULT_CONTACT_5>
+    <Text lang="1033">Recall Without Date</Text>
+    <Text lang="1040">Recall Without Date</Text>
+  </RESULT_CONTACT_5>
+</Labels>

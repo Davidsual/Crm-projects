@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFF97B37-449C-4670-9309-7681EF564B06}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reply.Iveco.LeadManagement.Presenter</RootNamespace>
+    <AssemblyName>Reply.Iveco.LeadManagement.Presenter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Reply.Iveco.LeadManagement.Presenter.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.crm.sdk, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="microsoft.crm.sdktypeproxy, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\BaseLeadManagementController.cs" />
+    <Compile Include="Controller\ControllerConstant.cs" />
+    <Compile Include="Controller\LeadManagementController.Mobile.cs" />
+    <Compile Include="Controller\LeadManagementController.Dealer.cs" />
+    <Compile Include="Controller\DealerController.cs" />
+    <Compile Include="Controller\LeadManagementController.Management.cs" />
+    <Compile Include="Controller\LeadManagementController.Scheduler.cs" />
+    <Compile Include="Controller\LeadManagementController.cs" />
+    <Compile Include="Entity\Auth.cs" />
+    <Compile Include="Entity\CallBackData.cs" />
+    <Compile Include="Entity\CheckLoginResult.cs" />
+    <Compile Include="Entity\SetLeadParameter.cs" />
+    <Compile Include="Entity\GetLanguagesResult.cs" />
+    <Compile Include="Entity\GetCountriesResult.cs" />
+    <Compile Include="Entity\GetDealerResult.cs" />
+    <Compile Include="Entity\GetDealerParameter.cs" />
+    <Compile Include="Entity\DealerInfo.cs" />
+    <Compile Include="Entity\FindDealerResult.cs" />
+    <Compile Include="Entity\HeaderAuthentication.cs" />
+    <Compile Include="Entity\LoginResult.cs" />
+    <Compile Include="Entity\SetMassiveAppointmentAsapReturn.cs" />
+    <Compile Include="Exception\LeadNotFoundException.cs" />
+    <Compile Include="Exception\WsNotAutorizedUserException.cs" />
+    <Compile Include="Exception\QueueNotFoundException.cs" />
+    <Compile Include="Exception\ICustomException.cs" />
+    <Compile Include="Exception\InvalidInputParameterException.cs" />
+    <Compile Include="Exception\LanguageNotFoundException.cs" />
+    <Compile Include="Exception\CountryNotFoundException.cs" />
+    <Compile Include="Exception\ServiceTypeNotFoundException.cs" />
+    <Compile Include="Exception\ExceptionConstant.cs" />
+    <Compile Include="Exception\SetAppointmentException.cs" />
+    <Compile Include="LoggingUtility.cs" />
+    <Compile Include="Model\DataAccessLayer.Mobile.cs" />
+    <Compile Include="Model\CrmUtils.cs" />
+    <Compile Include="Model\DataAccessLayer.Dealer.cs" />
+    <Compile Include="Model\DataUtility.cs" />
+    <Compile Include="Model\EntityDataModel\BusySlot.cs" />
+    <Compile Include="Model\EntityDataModel\ConstraintsClasses.cs" />
+    <Compile Include="Model\EntityDataModel\ContactLead.cs" />
+    <Compile Include="Entity\SetDealerResult.cs" />
+    <Compile Include="Entity\DataScheduler.cs" />
+    <Compile Include="Entity\GetCalendarResult.cs" />
+    <Compile Include="Entity\SetAppointmentResult.cs" />
+    <Compile Include="Entity\SetDealerParameter.cs" />
+    <Compile Include="Entity\SetLeadResult.cs" />
+    <Compile Include="Exception\OperatorNotFoundException.cs" />
+    <Compile Include="Model\BaseDataAccessLayer.cs" />
+    <Compile Include="Model\CrmDealerModel.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrmDealerModel.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataAccessLayer.Management.cs" />
+    <Compile Include="Model\DataAccessLayer.Scheduler.cs" />
+    <Compile Include="Model\DataAccessLayer.cs" />
+    <Compile Include="Model\DataConstant.cs" />
+    <Compile Include="Model\CrmDealerAccessLayer.cs" />
+    <Compile Include="Model\EntityDataModel\DataSchedulerModel.cs" />
+    <Compile Include="Model\EntityDataModel\New_slot_Extended.cs" />
+    <Compile Include="Model\EntityDataModel\Proposal.cs" />
+    <Compile Include="Model\EntityDataModel\RelationLeadUsedVehicleModel.cs" />
+    <Compile Include="Model\EntityDataModel\SystemUserEx.cs" />
+    <Compile Include="Model\EntityDataModel\ValidatedServiceAppointment.cs" />
+    <Compile Include="Model\IFDConnection.cs" />
+    <Compile Include="Model\LeadManagementModel.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeadManagementModel.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Log.cs" />
+    <Compile Include="Model\SqlQueryStatement.cs" />
+    <Compile Include="Model\TrustAllCertificatePolicy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CrmDealerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CrmSdk.Discovery\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\microsoft.crm.sdk.dll" />
+    <Content Include="Lib\microsoft.crm.sdktypeproxy.dll" />
+    <None Include="Web References\CrmDealerService\CrmDealerServices.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\LeadManagementModel.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LeadManagementModel.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Controller\ControllerClassDiagram.cd" />
+    <None Include="Model\CrmDealerModel.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CrmDealerModel.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Model\LeadManagementModel.dbml.layout">
+      <DependentUpon>LeadManagementModel.dbml</DependentUpon>
+    </None>
+    <None Include="Model\ModelClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\CrmDealerModel.dbml.layout">
+      <DependentUpon>CrmDealerModel.dbml</DependentUpon>
+    </None>
+    <None Include="Reply.Iveco.LeadManagement.Presenter.snk" />
+    <None Include="Web References\CrmDealerService\CrmDealerServices.wsdl" />
+    <None Include="Web References\CrmDealerService\FindDealerResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CrmDealerService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CrmDealerService\SetLeadResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CrmSdk.Discovery\CrmDiscoveryService.wsdl" />
+    <None Include="Web References\CrmSdk.Discovery\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CrmSdk.Discovery\Response.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\TFSProjects\IVECO_DealerSales\LeadManagement\Reply.Iveco.LeadManagement\CrmDiscoveryService.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CrmSdk.Discovery\</RelPath>
+      <UpdateFromURL>C:\TFSProjects\IVECO_DealerSales\LeadManagement\Reply.Iveco.LeadManagement\CrmDiscoveryService.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Reply_Iveco_LeadManagement_Presenter_CrmSdk_Discovery_CrmDiscoveryService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:29540/services/crmdealerservices.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CrmDealerService\</RelPath>
+      <UpdateFromURL>http://localhost:29540/services/crmdealerservices.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Reply_Iveco_LeadManagement_Presenter_CrmDealerService_CrmDealerServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

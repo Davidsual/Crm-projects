@@ -1,0 +1,235 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Reply.Iveco.LeadManagement.Presenter;
+using Reply.Iveco.LeadManagement.Presenter.Model;
+using System.Globalization;
+
+
+namespace Reply.Iveco.LeadManagement.Web.UI
+{
+    public partial class TestPage : BasePage
+    {
+        /// <summary>
+        /// Current controller
+        /// </summary>
+        private LeadManagementController CurrentCtrl
+        {
+            get
+            {
+                return base.GetCurrentController<LeadManagementController>().Invoke(TypeEnviroment.LeadManagement,"IvecoLeadManagement");
+            }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!Page.IsPostBack)
+            {
+                this.txtStartDate.Text = DateTime.Now.Date.ToShortDateString();
+                this.txtEndDate.Text = DateTime.Now.Date.ToShortDateString();
+                this.txtStartSchedDatePro.Text = DateTime.Now.Date.ToShortDateString();
+                this.txtEndSchedDatePro.Text = DateTime.Now.Date.ToShortDateString();
+                this.txtDataLeadCreation.Text = DateTime.Now.Date.ToShortDateString();
+                this.txtDueDate.Text = DateTime.Now.Date.ToShortDateString();
+                this.txtDesideredData.Text = DateTime.Now.Date.ToShortDateString();
+
+                this.ddlCountryDealer.DataSource = this.CurrentCtrl.GetAllCountry();
+                this.ddlCountryDealer.DataValueField = "new_countryid";
+                this.ddlCountryDealer.DataTextField = "new_name";
+                this.ddlCountryDealer.DataBind();
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.lblErrore.Text = string.Empty;
+                this.CurrentCtrl.SetAppointmentAsap(this.GetDataFake());
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "ok", "alert('Operazione conclusa con successo');", true);
+            }
+            catch (Exception ex)
+            {
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "err", "alert('" + ex.Message.Replace("'","\'") + "');", true);
+                this.lblErrore.Text = ex.Message + Environment.NewLine + Environment.NewLine + ex.StackTrace;
+            }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            this.lblErrore.Text = string.Empty;
+            try 
+	        {
+                DateTime start = Convert.ToDateTime(this.txtStartDate.Text.Trim() + " " + this.txtStartTime.Text.Trim());
+                DateTime end = Convert.ToDateTime(this.txtEndDate.Text.Trim() + " " + this.txtEndTime.Text.Trim());
+
+                this.CurrentCtrl.SetAppointmentBooking(this.GetDataFake(), start, end);
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "ok", "alert('Operazione conclusa con successo');", true);
+
+	        }
+	        catch (Exception ex)
+	        {
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "err", "alert('" + ex.Message + "');", true);
+                this.lblErrore.Text = ex.Message + Environment.NewLine + Environment.NewLine + ex.StackTrace;
+	        }
+        }
+
+        private CallBackData GetDataFake()
+        {
+            return new CallBackData()
+            {
+                DataLeadCreation = (!string.IsNullOrEmpty(this.txtDataLeadCreation.Text.Trim())) ? Convert.ToDateTime(this.txtDataLeadCreation.Text.Trim()) : DateTime.MinValue,
+                CustomerName = this.txtNome.Text.Trim(),
+                CustomerSurname = this.txtCognome.Text.Trim(),
+                Address = this.txtIndirizzo.Text.Trim(),
+                ZipCode = this.txtCap.Text.Trim(),
+                City = this.txtCitta.Text.Trim(),
+                Province = this.txtProvincia.Text.Trim(),
+                Nation = this.ddlCountry.SelectedValue,
+                EMail = this.txtEMail.Text.Trim(),
+                PhoneNumber = this.txtTelNum.Text.Trim(),
+                MobilePhoneNumber = this.txtNumCellPhone.Text.Trim(),
+                FlagPrivacy = true,
+                Brand = this.ddlBrand.SelectedValue,
+                DueDate = (!string.IsNullOrEmpty(this.txtDueDate.Text.Trim())) ? Convert.ToDateTime(this.txtDueDate.Text.Trim()) : DateTime.MinValue,
+                TypeContact = this.ddlTypeContact.SelectedValue,
+                Model = this.txtModel.Text.Trim(),
+                Type = this.txtType.Text.Trim(),
+                GVW = this.txtGVW.Text.Trim(),
+                WheelType = this.txtWheelType.Text.Trim(),
+                Fuel = this.txtFuel.Text.Trim(),
+                FlagPrivacyDue = false,
+                IdCare = this.txtIdCare.Text.Trim(),
+                InitiativeSource = this.txtInitiativeSource.Text.Trim(),
+                InitiativeSourceReport = this.txtInitiativeSourceReport.Text.Trim(),
+                InitiativeSourceReportDetail = this.txtInitiativeSourceReportDetail.Text.Trim(),
+                CompanyName = this.txtCompanyName.Text.Trim(),
+                Power = this.txtPower.Text.Trim(),
+                CabType = this.txtCabType.Text.Trim(),
+                Suspension = this.txtSuspension.Text.Trim(),
+                CommentWebForm = this.txtCommentWebForm.Text.Trim(),
+                IdLeadSite = this.txtidLeadSite.Text.Trim(),
+                Title = this.txtTitle.Text.Trim(),
+                Language = this.ddlLanguage.SelectedValue,
+                CodePromotion = this.txtCodePromotion.Text.Trim(),
+                ModelOfInterest = this.txtModelOfInterest.Text.Trim(),
+                StockSearchedModel = this.txtStockSearched.Text.Trim(),
+                DesideredData = (!string.IsNullOrEmpty(this.txtDesideredData.Text.Trim()))? Convert.ToDateTime(this.txtDesideredData.Text.Trim()) : DateTime.MinValue,
+                Canale = this.ddlCanale.SelectedValue
+            };
+        }
+
+        protected void btnPrenotAsap_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Proposal pro = this.CurrentCtrl.TestProposalOperator(this.ddlLanguagePro.SelectedValue,
+                this.ddlCountryPro.SelectedValue, Reply.Iveco.LeadManagement.Presenter.Model.DataConstant.TypeService.ASAP,
+                Convert.ToDateTime(this.txtStartSchedDatePro.Text.Trim() + " " + this.txtStartSchedTimePro.Text.Trim()),
+                Convert.ToDateTime(this.txtEndSchedDatePro.Text.Trim() + " " + this.txtEndSchedTimePro.Text.Trim()));
+                string value = pro.ProposalUser.Name + " - dalle: " + pro.StartSlotUniversalTime.ToString() + " alle: " + pro.EndSlotUniversalTime.ToString();
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "ok", "alert('"+  value+ "');", true);
+            }
+            catch (Exception ex)
+            {
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "err", "alert('" + ex.Message + "');", true);
+                this.lblErrore.Text = ex.Message + Environment.NewLine + Environment.NewLine + ex.StackTrace;
+            }
+
+        }
+
+        protected void btnPrenotBooking_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Proposal pro = this.CurrentCtrl.TestProposalOperator(this.ddlLanguagePro.SelectedValue,
+                this.ddlCountryPro.SelectedValue, Reply.Iveco.LeadManagement.Presenter.Model.DataConstant.TypeService.BOOKING,
+                Convert.ToDateTime(this.txtStartSchedDatePro.Text.Trim() + " " + this.txtStartSchedTimePro.Text.Trim()),
+                Convert.ToDateTime(this.txtEndSchedDatePro.Text.Trim() + " " + this.txtEndSchedTimePro.Text.Trim()));
+                if (pro == null)
+                {
+                    Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "ok", "alert('Nessun operatore trovato');", true);
+                    return;
+                }
+                string value = pro.ProposalUser.Name + " - dalle: " + pro.StartSlotUniversalTime.ToString() + " alle: " + pro.EndSlotUniversalTime.ToString();
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "ok", "alert('" + value + "');", true);
+            }
+            catch (Exception ex)
+            {
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "err", "alert('" + ex.Message + "');", true);
+                this.lblErrore.Text = ex.Message + Environment.NewLine + Environment.NewLine + ex.StackTrace;
+            }
+        }
+
+        protected void btnGetCalendar_Click(object sender, EventArgs e)
+        {
+            this.MyScheduler.LoadScheduler("IvecoLeadManagement", this.ddlCountryCalendar.SelectedValue, this.ddlLanguageCalendar.SelectedValue);
+        }
+
+        protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+        {
+            MultiView1.ActiveViewIndex = Int32.Parse(e.Item.Value);
+
+        }
+        /// <summary>
+        /// set dealer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btnSetDealer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.CurrentCtrl.SetDealer(new SetDealerParameter()
+                {
+                    CriticalReasonCode = Convert.ToInt32(this.txtCriticalReasonCode.Text.Trim()),
+                    DealerCode = this.txtDealerCode.Text.Trim(),
+                    DealerCompanyName = this.txtDealerCompanyName.Text.Trim(),
+                    DealerEmail = this.txtDealerEmail.Text.Trim(),
+                    DealerResponsible = this.txtDealerResponsible.Text.Trim(),
+                    EmailMarketingAccount = this.txtEmailMarketingAccount.Text.Trim(),
+                    IdLeadCrm = this.txtIdLeadCrm.Text.Trim(),
+                    IsCriticalCustomer = this.chkIsCriticalCustomer.Checked,
+                    IsDealerAgree = this.chkIsDealerAgree.Checked,
+                    MarketingAccount = this.txtMarketingAccount.Text.Trim()
+                });
+            }
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "a", "alert('Errore durante la set dealer');", true);
+                this.lblErrore.Text = ex.Message + " - " + ex.StackTrace + Environment.NewLine;
+                if(ex.InnerException != null)
+                {
+                    this.lblErrore.Text += ex.InnerException.Message + " - " + ex.InnerException.StackTrace;
+                }
+            }
+        }
+        /// <summary>
+        /// Ottiene un dealer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        protected void btnGetDealer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.CurrentCtrl.GetDealer(new GetDealerParameter()
+                    {
+
+                    });
+            }
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "a", "alert('Errore durante la set dealer');", true);
+                this.lblErrore.Text = ex.Message + " - " + ex.StackTrace + Environment.NewLine;
+                if (ex.InnerException != null)
+                {
+                    this.lblErrore.Text += ex.InnerException.Message + " - " + ex.InnerException.StackTrace;
+                }
+            }
+        }
+    }
+}

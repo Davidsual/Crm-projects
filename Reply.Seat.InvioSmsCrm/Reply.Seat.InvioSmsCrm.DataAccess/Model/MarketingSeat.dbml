@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="MarketingSEAT_MSCRM" Class="MarketingSeatDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=174.129.188.203;Initial Catalog=MarketingSEAT_MSCRM;Persist Security Info=True;User ID=d.trotta" SettingsObjectName="Reply.Seat.InvioSmsCrm.DataAccess.Properties.Settings" SettingsPropertyName="MarketingSEAT_MSCRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.New_sms" Member="New_sms">
+    <Type Name="New_sms">
+      <Column Name="CreatedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ModifiedByDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ModifiedByName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="New_ChiamanteCampagnaIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_ChiamanteCampagnaIdName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="OwnerId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerIdName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdYomiName" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="OwnerIdDsc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OwnerIdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_smsId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ModifiedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningUser" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwningBusinessUnit" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="statecode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="statuscode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeletionStateCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VersionNumber" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="ImportSequenceNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OverriddenCreatedOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeZoneRuleVersionNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UTCConversionTimeZoneCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="New_ChiamanteCampagnaId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="New_TestoSMS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="New_NumeroDestinatario" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="New_DataInvio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="New_StatoInvio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="New_DescrizioneErrore" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

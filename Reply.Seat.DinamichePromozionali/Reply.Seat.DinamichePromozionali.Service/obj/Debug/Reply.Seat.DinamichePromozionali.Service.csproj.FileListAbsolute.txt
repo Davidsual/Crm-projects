@@ -1,0 +1,13 @@
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\Reply.Seat.DinamichePromozionali.Service.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\Reply.Seat.DinamichePromozionali.Service.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\Reply.Seat.DinamichePromozionali.BL.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\Reply.Seat.DinamichePromozionali.CrmAdapter.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\Reply.Seat.DinamichePromozionali.DataAccess.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\CrmServicePerformance.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\Reply.Seat.DinamichePromozionali.BL.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\Reply.Seat.DinamichePromozionali.CrmAdapter.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\Reply.Seat.DinamichePromozionali.DataAccess.pdb
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\bin\CrmServicePerformance.XmlSerializers.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\obj\Debug\Reply.Seat.DinamichePromozionali.Service.dll
+C:\Progetti\DinamichePromozionali\Reply.Seat.DinamichePromozionali\Reply.Seat.DinamichePromozionali.Service\obj\Debug\Reply.Seat.DinamichePromozionali.Service.pdb

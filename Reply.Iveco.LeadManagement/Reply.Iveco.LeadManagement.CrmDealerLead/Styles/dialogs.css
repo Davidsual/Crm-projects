@@ -1,0 +1,67 @@
+﻿TD.mscrm-Dialog-Header
+{
+background-color:#6693CF;
+color:			#ffffff;
+border-bottom:	1px solid #6693CF;
+height:			51px;
+vertical-align:	top;
+padding:		5px;
+}
+
+DIV.mscrm-Dialog-Header-Title
+{
+font-weight:	bold;
+font-size:		12;
+padding-left:	5px;
+}
+
+DIV.mscrm-Dialog-Header-Desc
+{
+padding-top:	4px;
+padding-left:	5px;
+}
+
+DIV.mscrm-Dialog-Main
+{
+height:			100%;
+width:			100%;
+vertical-align:	top;
+padding-left:	5px;
+padding-right:	5px;
+padding-bottom: 5px;
+padding-top:	5px;
+overflow:		auto;
+border-bottom:  solid 1px #A7CDF0;
+}
+
+TD.mscrm-Dialog-Footer
+{
+height:			30px;
+border-top:		1px solid #ffffff;
+}
+
+TD.mscrm-Dialog-Footer-Left
+{
+text-align:left;
+}
+
+TD.mscrm-Dialog-Footer-Right
+{
+text-align:right;
+}
+
+TD.mscrm-Dialog-Lookup-Types
+{
+padding: 0px 5px;
+}
+
+TD.mscrm-Dialog-Lookup-SearchArea
+{
+height:				35px;
+vertical-align:		top;
+padding-left:		0px;
+padding-right:		0px;
+padding-bottom:		2px;
+padding-top:		3px;
+vertical-align: bottom;
+}

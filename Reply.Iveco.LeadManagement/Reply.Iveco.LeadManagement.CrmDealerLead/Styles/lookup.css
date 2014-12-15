@@ -1,0 +1,58 @@
+﻿SPAN.mscrm-Lookup-Item
+{
+margin-left:2px;
+padding-top:1px;
+color: #0000ff;
+text-decoration:underline;
+cursor:	hand;
+vertical-align:middle;
+}
+
+IMG.mscrm-Lookup-Item
+{
+vertical-align:		middle;
+margin-left:		0px;
+margin-right:		0px;
+}
+
+DIV.mscrm-Lookup
+{
+	border: #6699cc 1px solid;
+	overflow-y: auto;
+	width: 100%;
+	word-wrap: break-word;
+	background: window;
+	height: 18px;
+	padding: 0px;
+}
+
+TABLE.mscrm-Lookup
+{
+margin:0px;
+}
+
+DIV.mscrm-ReadOnly
+{
+overflow-y:			auto;
+height:				18px;
+width:				100%;
+background-color:	#EAF3FF;
+border:				1px solid #C5C5C5;
+}
+
+DIV.mscrm-Lookup-ReadOnly
+{
+height:				18px!important;
+}
+
+IMG.mscrm-Lookup
+{
+cursor:				hand;
+behavior: url('./Styles/Lookup.htc');
+}
+TD.Lookup_RenderButton_td
+{
+	text-align: left;
+	width: 21px;
+	height:20px;
+}

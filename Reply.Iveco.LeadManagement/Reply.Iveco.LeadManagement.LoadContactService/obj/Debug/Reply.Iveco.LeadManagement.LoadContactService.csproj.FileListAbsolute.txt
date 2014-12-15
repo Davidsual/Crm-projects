@@ -1,0 +1,11 @@
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\bin\Debug\Reply.Iveco.LeadManagement.LoadContactService.exe
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\bin\Debug\Reply.Iveco.LeadManagement.LoadContactService.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\bin\Debug\Reply.Iveco.LeadManagement.Presenter.dll
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\bin\Debug\Reply.Iveco.LeadManagement.Presenter.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\obj\Debug\Reply.Iveco.LeadManagement.LoadContactService.ProjectInstaller.resources
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\obj\Debug\Reply.Iveco.LeadManagement.LoadContactService.LoadLead.resources
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\obj\Debug\Reply.Iveco.LeadManagement.LoadContactService.csproj.GenerateResource.Cache
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\obj\Debug\Reply.Iveco.LeadManagement.LoadContactService.exe
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\obj\Debug\Reply.Iveco.LeadManagement.LoadContactService.pdb
+C:\Progetti\LeadManagement\Reply.Iveco.LeadManagement\Reply.Iveco.LeadManagement.LoadContactService\bin\Debug\Reply.Iveco.LeadManagement.LoadContactService.exe.config

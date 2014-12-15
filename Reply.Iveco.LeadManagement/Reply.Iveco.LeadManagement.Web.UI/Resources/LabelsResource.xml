@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Labels>
+  <TITLE_UPLOAD_LEAD>
+    <Text lang="1033">Import list</Text>
+    <Text lang="1040">Importa lista</Text>
+  </TITLE_UPLOAD_LEAD>
+  <DESCR_LOADING_FILE>
+    <Text lang="1033">Select a file in CSV separated by semicolon with the planned route:</Text>
+    <Text lang="1040">Selezionare un file in formato CSV separato da punto e virgola con il tracciato previsto:</Text>
+  </DESCR_LOADING_FILE>
+  <ERROR_DURING_LOAD>
+    <Text lang="1033">Error during loading file!</Text>
+    <Text lang="1040">Errore durante il caricamento del file!</Text>
+  </ERROR_DURING_LOAD>
+  <ERROR_FILE_TYPE>
+    <Text lang="1033">The file must be loaded from a *. CSV!</Text>
+    <Text lang="1040">Il file da caricare deve essere un *.CSV!</Text>
+  </ERROR_FILE_TYPE>
+  <LOADING_RESULT>
+    <Text lang="1033">On {0} record/s have been loader {1} record/s!</Text>
+    <Text lang="1040">Su {0} record sono stati caricati {1} record!</Text>
+  </LOADING_RESULT>
+  <SELECT_FILE>
+    <Text lang="1033">Select the file to upload!</Text>
+    <Text lang="1040">Seleziona il file da caricare!</Text>
+  </SELECT_FILE>
+  <UPLOAD_BUTTON>
+    <Text lang="1033">Upload</Text>
+    <Text lang="1040">Carica</Text>
+  </UPLOAD_BUTTON>
+</Labels>
+
+

@@ -1,0 +1,380 @@
+﻿/* Per le mappe di Virtual Earth */
+#MSVE_obliqueNotification {
+	visibility: hidden;
+}
+
+BODY 
+{
+	margin:0;
+	border:0;
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; SCROLLBAR-FACE-COLOR: white; FONT-SIZE: 11px; MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: #d6e8ff; BORDER-LEFT: 0px; CURSOR: default; SCROLLBAR-SHADOW-COLOR: #d6e8ff; DIRECTION: ltr; SCROLLBAR-3DLIGHT-COLOR: #6699cc; SCROLLBAR-ARROW-COLOR: #567db1; BORDER-BOTTOM: 0px; SCROLLBAR-DARKSHADOW-COLOR: #6699cc; SCROLLBAR-BASE-COLOR: #d6e8ff; BACKGROUND-COLOR: #d6e8ff; BEHAVIOR: url(App_Themes/MSCRM4/page.htc); overflow:hidden;
+}
+TD {
+	FONT-SIZE: 11px
+}
+TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; TEXT-ALIGN: left
+}
+TABLE {
+	CURSOR: default
+}
+A {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A:link IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A:link {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A:visited IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A:visited {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A:active IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A:active {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A.mscrm-FindButton {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 21px; PADDING-RIGHT: 0px; HEIGHT: 20px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 1px
+}
+
+A:hover IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A:hover {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-DECORATION: none
+}
+A.ImportMapViewLink {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #0000ff; BORDER-BOTTOM: medium none; TEXT-DECORATION: underline
+}
+A.ImportMapViewLink:link {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #0000ff; BORDER-BOTTOM: medium none; TEXT-DECORATION: underline
+}
+A.ImportMapViewLink:visited {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: normal; BORDER-LEFT: medium none; COLOR: #0000ff; BORDER-BOTTOM: medium none; TEXT-DECORATION: underline
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+
+INPUT {
+/*	BORDER-RIGHT: #6699cc 1px solid;
+	BORDER-TOP: #6699cc 1px solid;
+	BORDER-BOTTOM: #6699cc 1px solid;
+	BORDER-LEFT: #6699cc 1px solid;
+*/	FONT-SIZE: 11px;
+	COLOR: #000000;
+
+}
+TEXTAREA {
+	BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #6699cc 1px solid; COLOR: #000000; BORDER-BOTTOM: #6699cc 1px solid
+}
+SELECT {
+	BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #6699cc 1px solid; COLOR: #000000; BORDER-BOTTOM: #6699cc 1px solid
+}
+DIV.overlay
+{
+	position: absolute;
+	visibility: hidden;
+	background-color: black;
+	background-image: url(Images/progress.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 10000;
+	filter: progid:DXImageTransform.Microsoft.alpha(opacity=40);
+	opacity: 0.4;
+}
+IFRAME.overlay
+{
+	position: absolute;
+	visibility: hidden;
+	border: none;
+	z-index: 10000;
+	filter: progid:DXImageTransform.Microsoft.alpha(opacity=40);
+	opacity: 0.4;
+}
+TABLE.layoutTable {
+	TABLE-LAYOUT: fixed; WIDTH: 100%; HEIGHT: 100%;
+	
+}
+TABLE.layoutStdTable {
+	TABLE-LAYOUT: fixed; WIDTH: 100%; HEIGHT: 100%; border-left:10px solid transparent;border:10px solid transparent;
+}
+
+BUTTON
+{
+	BORDER-RIGHT: #3366cc 1px solid;
+	PADDING-RIGHT: 5px;
+	BORDER-TOP: #3366cc 1px solid;
+	PADDING-LEFT: 5px;
+	FONT-SIZE: 11px;
+	background-position:center;
+	BACKGROUND-IMAGE: url('./Images/btn_rest.gif');
+	BORDER-LEFT: #3366cc 1px solid;
+	WIDTH: 84px;
+	CURSOR: pointer;
+	LINE-HEIGHT: 18px;
+	BORDER-BOTTOM: #3366cc 1px solid;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Tahoma;
+	HEIGHT: 23px;
+	BACKGROUND-COLOR: #cee7ff;
+	TEXT-ALIGN: center
+}
+
+INPUT.mscrm-Button {
+	OVERFLOW: visible; WIDTH: 84px; height:23px; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr=#EAF1FF, EndColorStr=#ffffff);
+}
+
+INPUT.mscrm-SelectBox
+{
+	width: 100%;
+	height: 20px;
+	border: 1px solid #6699cc;
+	border-right: 0px;
+	padding-left: 5px;
+	font-size: 12px;
+	cursor: default;
+}
+INPUT.mscrm-Dialog-Lookup-QuickFind 
+{
+	BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 5px; WIDTH: 100%; PADDING-RIGHT: 5px; HEIGHT: 20px;  BEHAVIOR: url(/_static/_common/scripts/hintText.htc)
+}
+SPAN.mscrm-SelectBox
+{
+	height: 20px;
+}
+SELECT.mscrm-SelectBox
+{
+	width: 100%;
+	height: 22px;
+}
+TD.mscrm-Dialog-Header
+{
+background-color:#6693CF;
+color:			#ffffff;
+border-bottom:	1px solid #6693CF;
+height:			51px;
+vertical-align:	top;
+padding:		5px;
+font-size:	13px;
+}
+
+DIV.mscrm-Dialog-Header-Title
+{
+font-weight:	bold;
+font-size:		12;
+padding-left:	5px;
+}
+
+DIV.mscrm-Dialog-Header-Desc
+{
+padding-top:	4px;
+padding-left:	5px;
+font-size:11px;
+}
+
+DIV.mscrm-Dialog-Main
+{
+height:			100%;
+width:			100%;
+vertical-align:	top;
+padding-left:	5px;
+padding-right:	5px;
+padding-bottom: 5px;
+padding-top:	5px;
+overflow:		auto;
+border-bottom:  solid 1px #A7CDF0;
+}
+
+TD.mscrm-Dialog-Footer
+{
+height:			30px;
+border-top:		1px solid #ffffff;
+}
+
+TD.mscrm-Dialog-Footer-Left
+{
+text-align:left;
+}
+
+TD.mscrm-Dialog-Footer-Right
+{
+text-align:right;
+}
+
+TD.mscrm-Dialog-Lookup-Types
+{
+padding: 0px 5px;
+}
+
+TD.mscrm-Dialog-Lookup-SearchArea
+{
+height:				35px;
+vertical-align:		top;
+padding-left:		0px;
+padding-right:		0px;
+padding-bottom:		2px;
+padding-top:		3px;
+vertical-align: bottom;
+}
+BODY {
+	FONT-FAMILY: Tahoma, Verdana, Arial
+}
+INPUT {
+	FONT-FAMILY: Tahoma, Verdana, Arial
+}
+SELECT {
+	FONT-FAMILY: Tahoma, Verdana, Arial
+}
+TEXTAREA {
+	FONT-FAMILY: Tahoma, Verdana, Arial
+}
+
+table.ms-crm-Form-Title
+{
+width:				100%;
+height:				48px;
+table-layout:		fixed;
+}
+
+table.ms-crm-Form-Title-NoNav
+{
+padding-top:		6px;
+width:				100%;
+height:				54px;
+table-layout:		fixed;
+}
+
+td.ms-crm-Form-Title
+{
+text-align:     left;
+padding-left:   10px;
+padding-right:  10px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+TD.ms-crm-Form-LargeIcon
+{
+padding-left: 48px;
+width:		170px;
+}
+
+TD.ms-crm-Form-LargeIcon-NoNav
+{
+width:		86px;
+}
+
+TR.ms-crm-Form-Title
+{
+vertical-align:	top;
+}
+
+table.ms-crm-Form-Title,
+table.ms-crm-Form-Title-NoNav
+{
+background-color:	#d8e8ff;
+}
+
+
+IMG.ms-crm-Form-Breadcrumb-Nav
+{
+margin-right:   8px;
+vertical-align:	middle;
+}
+
+span.ms-crm-Form-Title
+{
+line-height:	16px;
+vertical-align:	bottom;
+font-size:		18px;
+font-weight: bold;
+}
+
+span.ms-crm-Form-Breadcrumb
+{
+line-height:	18px;
+vertical-align:	bottom;
+color:			#6699cc;
+font-size:		18;
+font-weight:	bold;
+}
+
+
+a.btn_toolbar {
+	cursor:hand;   
+	color:#15428b;   
+	font: 'Tahoma';
+	font-size:11px;
+	background-color:transparent;
+	background-image: url('./Images/app_titlebar.gif');
+	background-repeat:no-repeat;
+	border: 0px solid #6893cf;   
+	height:22px; width:84px;
+	vertical-align:middle;
+}
+
+a.btn_toolbar:hover {   
+	color:#15428b;   
+	font: 'Tahoma';
+	font-size:11px;
+	background-image:url('./Images/app_titlebar_hover.gif');
+	border: 1px solid #ffbd6c;   
+	height:22px; width:84px;
+	vertical-align:middle;
+}
+
+td.toolbar{
+	height:26px;
+	width:100%;
+	border-bottom:1px solid #3366cc;
+	background-image:url('./Images/gridtoolbar_back.gif');
+	background-repeat:repeat-x;
+}
+a.ms-crm-Menu-Label,
+SPAN.ms-crm-Menu-Label
+{
+margin-left: 1px;
+margin-right: 1px;
+height: 26px;
+padding-left: 1px;
+padding-right: 1px;
+overflow-y: hidden;
+cursor: pointer;
+background-image:none;
+vertical-align:top;
+cursor: pointer;
+text-decoration: none;
+font-family:'Tahoma';
+font-size: 11px;
+font-weight:normal;
+color:#15428b;
+border:1px solid transparent;
+}
+a.ms-crm-Menu-Label:hover,
+span.ms-crm-Menu-Label:hover
+{
+vertical-align:top;
+cursor: pointer;
+text-decoration: none;
+font-family:'Tahoma';
+font-size: 11px;
+font-weight:normal;
+color:#15428b;
+background-image: url('toolbar_hover.gif');
+background-repeat: repeat-x;
+margin-left: 1px;
+margin-right: 1px;
+height: 26px;
+padding-left: 1px;
+padding-right: 1px;
+border: 1px solid #ffb74c;
+background-color: #ffe6a0;
+overflow-y: hidden;
+}

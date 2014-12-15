@@ -1,0 +1,5 @@
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAdapter\bin\Debug\Reply.Seat.InvioSmsCrm.DataAdapter.dll
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAdapter\bin\Debug\Reply.Seat.InvioSmsCrm.DataAdapter.pdb
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAdapter\obj\Debug\ResolveAssemblyReference.cache
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAdapter\obj\Debug\Reply.Seat.InvioSmsCrm.DataAdapter.dll
+C:\Progetti\InvioSmsCrm\Reply.Seat.InvioSmsCrm\Reply.Seat.InvioSmsCrm.DataAdapter\obj\Debug\Reply.Seat.InvioSmsCrm.DataAdapter.pdb

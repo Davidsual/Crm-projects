@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="_http://schemas.microsoft.com/crm/2006/WebServices" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="_http://schemas.microsoft.com/crm/2006/WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="_http://schemas.microsoft.com/crm/2006/WebServices">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="SetAppointment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="callbackData" type="tns:CallBackData" />
+            <s:element minOccurs="1" maxOccurs="1" name="startDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CallBackData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DataLeadCreation" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerSurname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZipCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobilePhoneNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FlagPrivacy" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Brand" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StockSearchedModel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DueDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeContact" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Model" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GVW" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WheelType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fuel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FlagPrivacyDue" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdCare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiativeSource" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiativeSourceReport" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiativeSourceReportDetail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Power" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CabType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Suspension" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CommentWebForm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdLeadSite" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Language" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodePromotion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelOfInterest" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DesideredData" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Canale" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetAppointmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetAppointmentResult" type="tns:SetAppointmentResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetAppointmentResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="startDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="endDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="HeaderAuthentication" type="tns:HeaderAuthentication" />
+      <s:complexType name="HeaderAuthentication">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetCalendar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="language" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCalendarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCalendarResult" type="tns:GetCalendarResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetCalendarResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataSchedulerCalendar" type="tns:DataScheduler" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DataScheduler">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StartDateScheduler" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDateScheduler" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchedulerRows" type="tns:ArrayOfDataSchedulerRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDataSchedulerRow">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DataSchedulerRow" nillable="true" type="tns:DataSchedulerRow" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DataSchedulerRow">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RowId" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="RowName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartTimeSlot" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndTimeSlot" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataSchedulerRowCell" type="tns:ArrayOfDataSchedulerRowCell" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDataSchedulerRowCell">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DataSchedulerRowCell" nillable="true" type="tns:DataSchedulerRowCell" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DataSchedulerRowCell">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RowId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="ColumnId" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="CellName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CellDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="AvailableSlot" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OccupationASAP" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OccupationCSI" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OccupationBooking" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConflictASAP" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConflictCSI" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConflictBooking" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetDealer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dealerParameter" type="tns:SetDealerParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetDealerParameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IdLeadCrm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerCompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerResponsible" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarketingAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailMarketingAccount" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsDealerAgree" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCriticalCustomer" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CriticalReasonCode" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetDealerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetDealerResult" type="tns:SetDealerResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetDealerResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDealer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dealerParameter" type="tns:GetDealerParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetDealerParameter">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsFlagCritico" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeadType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZipCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountryId" type="s1:guid" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDealerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDealerResult" type="tns:GetDealerResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetDealerResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccessful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerCompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerResponsible" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarketingAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailMarketingAccount" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCriticalCustomer" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CriticalReasonCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerManagerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DealerManagerMail" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SetAppointmentSoapIn">
+    <wsdl:part name="parameters" element="tns:SetAppointment" />
+  </wsdl:message>
+  <wsdl:message name="SetAppointmentSoapOut">
+    <wsdl:part name="parameters" element="tns:SetAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetAppointmentHeaderAuthentication">
+    <wsdl:part name="HeaderAuthentication" element="tns:HeaderAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCalendar" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCalendarResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarHeaderAuthentication">
+    <wsdl:part name="HeaderAuthentication" element="tns:HeaderAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="SetDealerSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDealer" />
+  </wsdl:message>
+  <wsdl:message name="SetDealerSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDealerResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDealerHeaderAuthentication">
+    <wsdl:part name="HeaderAuthentication" element="tns:HeaderAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="GetDealerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDealer" />
+  </wsdl:message>
+  <wsdl:message name="GetDealerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDealerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LeadManagementServicesSoap">
+    <wsdl:operation name="SetAppointment">
+      <wsdl:input message="tns:SetAppointmentSoapIn" />
+      <wsdl:output message="tns:SetAppointmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <wsdl:input message="tns:GetCalendarSoapIn" />
+      <wsdl:output message="tns:GetCalendarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDealer">
+      <wsdl:input message="tns:SetDealerSoapIn" />
+      <wsdl:output message="tns:SetDealerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealer">
+      <wsdl:input message="tns:GetDealerSoapIn" />
+      <wsdl:output message="tns:GetDealerSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LeadManagementServicesSoap" type="tns:LeadManagementServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetAppointment">
+      <soap:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/SetAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SetAppointmentHeaderAuthentication" part="HeaderAuthentication" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <soap:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/GetCalendar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCalendarHeaderAuthentication" part="HeaderAuthentication" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDealer">
+      <soap:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/SetDealer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SetDealerHeaderAuthentication" part="HeaderAuthentication" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealer">
+      <soap:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/GetDealer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LeadManagementServicesSoap12" type="tns:LeadManagementServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetAppointment">
+      <soap12:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/SetAppointment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SetAppointmentHeaderAuthentication" part="HeaderAuthentication" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <soap12:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/GetCalendar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCalendarHeaderAuthentication" part="HeaderAuthentication" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDealer">
+      <soap12:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/SetDealer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SetDealerHeaderAuthentication" part="HeaderAuthentication" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealer">
+      <soap12:operation soapAction="_http://schemas.microsoft.com/crm/2006/WebServices/GetDealer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LeadManagementServices">
+    <wsdl:port name="LeadManagementServicesSoap" binding="tns:LeadManagementServicesSoap">
+      <soap:address location="http://192.168.88.22/CustomLMCERT/Services/LeadManagementServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LeadManagementServicesSoap12" binding="tns:LeadManagementServicesSoap12">
+      <soap12:address location="http://192.168.88.22/CustomLMCERT/Services/LeadManagementServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
